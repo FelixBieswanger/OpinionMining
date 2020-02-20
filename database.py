@@ -4,11 +4,9 @@ from pymongo import MongoClient
 client = MongoClient('mongodb://localhost:27017/')
 db = client.data
 
-print(db.list_collection_names())
-
-def insert_data(data):
+def insert_article(data):
     #check if article has already bin insertet by date,title,author
-    pass
+    db.article.insert(data)
 
 def get_all(data):
     pass
