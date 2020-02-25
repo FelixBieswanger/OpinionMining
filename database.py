@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
 class Database:
 
@@ -26,12 +27,21 @@ class Database:
         return self.db.article.find()
 
 
+    def update_article(self,data):
+        try:
+            article = self.db.article.find_one_and_replace({"_id": ObjectId(data["_id"])},data)
+        except:
+            print("Post with ID could not be found")
+            pass
 
 
-
-def test():
-    pass
-
+    def find_by_id(self, id):
+        try:
+            return self.db.article.find_one({"_id": ObjectId(id)})
+        except:
+            print("Post with ID could not be found")
+            return
+        
 
 
 
