@@ -9,11 +9,8 @@ from useragent import get_random_useraget
 import requests as r
 from bs4 import BeautifulSoup
 
-
-
-
 # defining search-word
-key_word = "Digitalisierung"
+key_word = "Digitale+Transformation"
 
 # setting date to starttime of script
 now = datetime.now()
@@ -52,11 +49,16 @@ root_page = BeautifulSoup(root_page, "html.parser")
 pagecount = root_page.find("span", {"class": "Seitenzahl"}).text
 pagecount = int(pagecount.split(" ")[1])
 
-pagecount = 1
+frompage = 1
+topage = 4
+
+if topage > pagecount:
+    print("To many pages were specifyed.",pagecount,"is the maximum.")
+    exit()
 
 # iterating over all root pages
-for i in range(1, pagecount+1):
-    logger.info("Start scrape of base page "+str(i)+"/"+str(pagecount))
+for i in range(frompage, topage+1):
+    logger.info("Start scrape of base page "+str(i)+"/"+str(topage))
     logger.info("=====================================")
     base_url = build_url(i, search_term=key_word)
     root_page = r.get(base_url, headers={
@@ -66,20 +68,21 @@ for i in range(1, pagecount+1):
     all_articles = root_page.find("div", {"class": "SuchergebnisListe"})
     all_articles = all_articles.find_all("div", {"class": "Teaser620"})
 
-    for article in all_articles[0:3]:
+    for article in all_articles:
 
         # skip those articles, where access has to be bought (maybe added later for scraping)
         fplus = article.find("span", {"class": "fazplusIcon"})
         if fplus:
             continue
 
-        article_url = "https://faz.net" + \
-            article.find("a", {"class": "TeaserHeadLink"})["href"]
+        link = article.find("div", {"class": "MediaLink"})
+        link = link.find("a")["href"]
+        article_url = "https://faz.net"+link
         logger.info("Start scrape of article "+article_url)
 
         headline = scrape_content(
             "headline", html_tag="span", attribute_type="class", value="Headline")
-        info = scrape_content("info", "div", "class", "TeaserInfo")
+        info = scrape_content("info", "div", "class", ["TeaserInfo"])
         if info:
             info = " ".join(info)
             info = info.split("|")
@@ -109,16 +112,21 @@ for i in range(1, pagecount+1):
             try:
                 author = art_page.find_all(
                     "span", {"class": "atc-MetaAuthor"})[0].text.strip()
-            except:
-                author = None
-                logger.warn("Author could not be scraped")
-
-            try:
                 location = art_page.find_all(
                     "span", {"class": "atc-MetaAuthor"})[1].text.strip()
             except:
+                author = None
                 location = None
-                logger.warn("Author could not be scraped")
+                logger.warning("Author & Location could not be scraped")
+
+            if not author:
+                author_span = art_page.find(
+                    "span", {"class", "atc-MetaAuthor"})
+                author = author_span.find("a").text
+
+            if not author:
+                author = scrape_content(
+                    "Author_Qulle", "span", "class", "atc-Footer_Quelle")
 
             try:
                 text = art_page.find("p", {"class": "atc-IntroText"}).text.strip()

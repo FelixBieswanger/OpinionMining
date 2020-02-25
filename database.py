@@ -2,7 +2,7 @@ from pymongo import MongoClient
 
 class Database:
 
-    def __init__(self, logger):
+    def __init__(self, logger=None):
         #connecting to mongodb running on default host and port
         client = MongoClient('mongodb://localhost:27017/')
         self.db = db = client.data
@@ -22,8 +22,8 @@ class Database:
         except:
             self.logger.critical("Article could not be stored")
             
-    def get_all(self, data):
-        pass
+    def get_all(self):
+        return self.db.article.find()
 
 
 

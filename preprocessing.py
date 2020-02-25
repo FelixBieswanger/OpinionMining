@@ -6,15 +6,14 @@ from spacy import load
 
 def clean_string(string):
     string = string.lower()
-    string = re.sub(r'\d+', " ", string)
-    string = string.replace("–", "")
-    string = string.replace(":", "")
-    string = string.replace("'", "")
-    string = string.replace(",", "")
+    string = re.sub('[^a-zA-Zäüö.ß]', ' ', string)
     return string
 
 def get_sentences(string):
-    return tokenize.sent_tokenize(string)
+    sents = tokenize.sent_tokenize(string)
+    for i in range(len(sents)):
+        sents[i] = sents[i].replace(".","")
+    return sents
 
 
 def doc2token(string):
@@ -44,18 +43,14 @@ def remove_stopwords(tokens,lang="german"):
     return result
 
 def pos_tag(text):
-    string = clean_string(text)
-    sent = get_sentences(string)
     nlp = load('de_core_news_md')
     result = list()
-    for s in sent:
-        doc= nlp(s)
+    for sent in text:
+        doc= nlp(sent)
         asent = list()
         for token in doc:
-            d=dict()
-            d["word"] = token.text
-            d["pos"] = token.pos_
-            asent.append(d)
+            if token.pos_ == "NOUN":
+                asent.append(token.text)
         result.append(asent)
     return result
 
