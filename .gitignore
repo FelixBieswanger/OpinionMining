@@ -1,5 +1,6 @@
 __pycache__/
-.vscode
-workspace.code-workspace
+*.vscode
+workspace.code-workspace/
 logs/
 resources/
+*.pyc
