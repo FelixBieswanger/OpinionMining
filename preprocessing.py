@@ -1,12 +1,13 @@
 import re
 from nltk import tokenize
 from nltk.corpus import stopwords
-from spacy import load
+import spacy
 
 
 def clean_string(string):
-    string = string.lower()
-    string = re.sub('[^a-zA-Zäüö.ß]', ' ', string)
+    string = re.sub('[^a-zA-Zäüöß]', ' ', string)
+    string = string.strip()
+    string = re.sub('[  ]+', ' ', string)
     return string
 
 def get_sentences(string):
@@ -15,18 +16,21 @@ def get_sentences(string):
         sents[i] = sents[i].replace(".","")
     return sents
 
+def get_lemma(docs):
+    nlp = spacy.load("de_core_news_sm")
 
-def doc2token(string):
-    string = clean_string(string)
-    sent = get_sentences(string)
     result = list()
-    for s in sent:
-        s = s.replace(".","")
-        if len(s) < 1:
-            continue
-        result.append(tokenize.word_tokenize(s))
- 
+    for doc in docs:
+        temp = ""
+        for token in nlp(doc):
+            temp += token.lemma_ + " "
+        result.append(temp)
+        print("processed",docs.index(doc),"of",len(docs))
     return result
+
+
+
+
 
 
 def remove_stopwords(tokens,lang="german"):
@@ -53,6 +57,18 @@ def pos_tag(text):
                 asent.append(token.text)
         result.append(asent)
     return result
+
+def find_max(results):
+    max = 0
+    topic = 0
+    for tupl in results:
+        if tupl[1] > max:
+            max = tupl[1]
+            topic = tupl[0]
+
+    return topic
+
+
 
 
 

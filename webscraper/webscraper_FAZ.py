@@ -1,24 +1,17 @@
 import sys
 sys.path.append(
     "/Users/felixbieswanger/Desktop/Uni_Stuff/Bachelorarbeit/OpionionMining")
-
-import logging as logger
 from database import Database
-from datetime import datetime
-from useragent import get_random_useraget
-import requests as r
 from bs4 import BeautifulSoup
+import requests as r
+from useragent import get_random_useraget
+from datetime import datetime
+from logger import Logger
 
 # defining search-word
-key_word = "Digitale+Transformation"
+search_term = "Fußball"
 
-# setting date to starttime of script
-now = datetime.now()
-string_time = now.strftime("%d%m%y_%H%M%S")
-# setup logger
-logger.basicConfig(filename=("./logs/webscrape_FAZ_"+string_time+".log"), level=logger.INFO,
-                   format="%(levelname)s;%(asctime)s;%(filename)s;%(lineno)s;%(message)s")
-logger.getLogger("requests").setLevel(logger.NOTSET)
+logger = Logger(site="FAZ",search_term=search_term).getLogger()
 
 # initializing database class and passing logger
 db = Database(logger)
@@ -27,12 +20,12 @@ db = Database(logger)
 # and sorting methode
 
 
-def build_url(i, search_term="digitalisierung", sort="date", search_from="TT.MM.JJJJ", search_to="20.02.2020"):
+def build_url(i, search_term=search_term, sort="date", search_from="TT.MM.JJJJ", search_to=datetime.now().strftime("%d.%m.%Y")):
     return "https://www.faz.net/suche/s"+str(i)+".html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from="+search_from+"&index=&query="+search_term+"&resultsPerPage=80&sort=date&to="+search_to+"&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on"
 
 
-#defining standard methode for scaping content on webpage
-def scrape_content(name, html_tag, attribute_type, value):
+# defining standard methode for scaping content on webpage
+def scrape_content(article, name, html_tag, attribute_type, value):
     result = None
     try:
         result = article.find(html_tag, {attribute_type: value}).text.strip()
@@ -42,54 +35,61 @@ def scrape_content(name, html_tag, attribute_type, value):
 
 
 # finding how many root pages there are to scrape example for search term digitalisierung: 62 pages
-url = build_url(1, search_term=key_word)
+url = build_url(1, search_term=search_term)
 root_page = r.get(url, headers={"User-Agent": get_random_useraget()}).content
 root_page = BeautifulSoup(root_page, "html.parser")
 
 pagecount = root_page.find("span", {"class": "Seitenzahl"}).text
 pagecount = int(pagecount.split(" ")[1])
 
-frompage = 1
-topage = 4
+#stop if no new articles are found
+stop_counter = 0
 
-if topage > pagecount:
-    print("To many pages were specifyed.",pagecount,"is the maximum.")
-    exit()
 
 # iterating over all root pages
-for i in range(frompage, topage+1):
-    logger.info("Start scrape of base page "+str(i)+"/"+str(topage))
-    logger.info("=====================================")
-    base_url = build_url(i, search_term=key_word)
+for i in range(1, pagecount):
+    logger.info("Start scrape of base page "+str(i))
+    base_url = build_url(i, search_term=search_term)
+    logger.info("Scrape URL"+base_url)
     root_page = r.get(base_url, headers={
                       "User-Agent": get_random_useraget()}).content
     root_page = BeautifulSoup(root_page, "html.parser")
 
     all_articles = root_page.find("div", {"class": "SuchergebnisListe"})
-    all_articles = all_articles.find_all("div", {"class": "Teaser620"})
+    all_articles = root_page.find_all("div",{"class":"Teaser620"})
+    logger.info(str(len(all_articles))+" found on page")
+
+    if len(all_articles) == 0:
+        logger.critical("!!!!! Scrape Stopped because resources were exeeded !!!!!!")
+        exit()
 
     for article in all_articles:
+        """
+        if stop_counter == 15:
+            logger.critical("!!!!! Scrape Stopped because no new articles were found !!!!!!")
+            exit()
+        """
 
         # skip those articles, where access has to be bought (maybe added later for scraping)
-        fplus = article.find("span", {"class": "fazplusIcon"})
-        if fplus:
+        if article.find("span", {"class": "fazplusIcon"}) or article.find("div", {"class": "First"}):
             continue
 
-        link = article.find("div", {"class": "MediaLink"})
-        link = link.find("a")["href"]
-        article_url = "https://faz.net"+link
-        logger.info("Start scrape of article "+article_url)
+        headline = scrape_content(article=article,name="headline", html_tag="span", attribute_type="class", value="Headline")
+        info = scrape_content(article=article, name="info", html_tag="div",
+                              attribute_type="class", value=["TeaserInfo"])
+        author = scrape_content(article=article, name="autor",
+                                html_tag="span", attribute_type="class", value="Autor")
 
-        headline = scrape_content(
-            "headline", html_tag="span", attribute_type="class", value="Headline")
-        info = scrape_content("info", "div", "class", ["TeaserInfo"])
+        if not author:
+            author = "dpa"
+
         if info:
             info = " ".join(info)
             info = info.split("|")
             category = info[1].strip()
-            category = category.replace(" ","")
+            category = category.replace(" ", "")
             date = info[0].strip()+":00"
-            date = date.replace(" ","")
+            date = date.replace(" ", "")
             try:
                 date = datetime.strptime(date, "%d.%m.%y%H:%M:%S")
             except:
@@ -98,10 +98,16 @@ for i in range(frompage, topage+1):
         else:
             category = None
             date = None
+            logger.info("Headline: "+headline)
 
         try:
+            link = article.find("div", {"class": "MediaLink"})
+            link = link.find("a")["href"]
+            article_url = "https://faz.net"+link
+            logger.info("Start scrape of article "+article_url)
+
             page = r.get(article_url, headers={
-                        "User-Agent": get_random_useraget()}).content
+                "User-Agent": get_random_useraget()}).content
             art_page = BeautifulSoup(page, "html.parser")
         except:
             page = None
@@ -110,65 +116,28 @@ for i in range(frompage, topage+1):
 
         if page:
             try:
-                author = art_page.find_all(
-                    "span", {"class": "atc-MetaAuthor"})[0].text.strip()
-                location = art_page.find_all(
-                    "span", {"class": "atc-MetaAuthor"})[1].text.strip()
-            except:
-                author = None
-                location = None
-                logger.warning("Author & Location could not be scraped")
+                text = art_page.find(
+                    "p", {"class": "atc-IntroText"}).text.strip()
 
-            if not author:
-                author_span = art_page.find(
-                    "span", {"class", "atc-MetaAuthor"})
-                author = author_span.find("a").text
-
-            if not author:
-                author = scrape_content(
-                    "Author_Qulle", "span", "class", "atc-Footer_Quelle")
-
-            try:
-                text = art_page.find("p", {"class": "atc-IntroText"}).text.strip()
-
-                paragraphs = art_page.find_all("p", {"class": "atc-TextParagraph"})
+                paragraphs = art_page.find_all(
+                    "p", {"class": "atc-TextParagraph"})
                 for p in paragraphs:
                     text += p.text.strip()
             except:
-                text=None
+                text = None
                 logger.critical("Article text could not be scraped")
 
-
             data = {
-                 "key-word":key_word, 
-                 "source":"FAZ", 
-                 "base_url":base_url, 
-                 "article_url":article_url,
-                 "headline":headline,
-                 "date":date,
-                 "author":author,
-                 "category":category,
-                 "text":text 
-                }
+                "search-term": search_term,
+                "source": "FAZ",
+                "base_url": base_url,
+                "article_url": article_url,
+                "headline": headline,
+                "date": date,
+                "author": author,
+                "category": category,
+                "text": text
+            }
 
-            db.insert_article(data)
-
-        
-
-
-
-            
-
-
-
-       
-
-    
-
-    
-
-
-    
-    
-
-
+            if db.insert_data(data=data, collection="article") == "already":
+                stop_counter+=1

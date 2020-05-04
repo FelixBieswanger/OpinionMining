@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import getpass
+import keys
 
 class Database:
 
@@ -8,8 +9,10 @@ class Database:
         #connecting to mongodb running on default host and port
         user = getpass.getuser()
         pw = user+"!"
-        client = MongoClient("mongodb+srv://"+user+":"+pw+"@cluster0-kzqxg.mongodb.net/data")
-        self.db = db = client.data
+        print("mongodb://"+user+":"+pw +"@34.90.240.64:27017/data")
+        
+        client = MongoClient( 'mongodb://%s:%s@34.90.240.64:27017' % (user, pw))
+        self.db = client.data
 
         self.logger = logger
 
