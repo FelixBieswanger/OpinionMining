@@ -1,8 +1,7 @@
 import requests as r
 import json
 import sys
-sys.path.append(
-    "/Users/felixbieswanger/Desktop/Uni_Stuff/Bachelorarbeit/OpionionMining")
+sys.path.append("./")
 import keys
 from bs4 import BeautifulSoup
 from database import Database
