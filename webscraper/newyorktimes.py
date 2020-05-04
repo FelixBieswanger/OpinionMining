@@ -23,7 +23,7 @@ pages = int(hits/10)
 
 for i in range(pages):
     response = r.get(
-        "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=digitization&sort=newest&page="+i+"&api-key="+key).content
+        "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=digitization&sort=newest&page="+str(i)+"&api-key="+key).content
     result = json.loads(response)["response"]
 
     for doc in result["docs"]:
