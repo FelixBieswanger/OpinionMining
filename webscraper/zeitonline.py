@@ -1,8 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as BS
 import sys
-sys.path.append(
-    "/Users/felixbieswanger/Desktop/Uni_Stuff/Bachelorarbeit/OpionionMining")
+sys.path.append("./")
 import keys
 
 user = keys.get_key("zeituser")
