@@ -1,16 +1,20 @@
-import requests as r
-import json
 import sys
 sys.path.append("./")
+from logger import Logger
+import requests as r
+import json
 import keys
 from bs4 import BeautifulSoup
 from database import Database
 
-db = Database()
+
+search_term = "digitization"
+logger = Logger(site="NYT", search_term=search_term).getLogger()
+db = Database(logger)
 key = keys.get_key("newyorktimes")
 
 response = r.get(
-    "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=digitization&sort=newest&page=1&api-key="+key).content
+    "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+search_term+"&sort=newest&page=1&api-key="+key).content
 
 result = json.loads(response)["response"]
 hits = result["meta"]["hits"]
@@ -42,6 +46,7 @@ for i in range(pages):
         store["text"] = text
 
         db.insert_data(collection="article",data=store)
+
 
 
 
