@@ -9,7 +9,9 @@ class Database:
         #connecting to mongodb running on default host and port
         user = getpass.getuser()
         pw = user+"!"
-        print("mongodb://"+user+":"+pw +"@34.90.240.64:27017/data")
+
+        ip = keys.get_key("mongoip")
+        print("mongodb://"+user+":"+pw +"@"+ip)
         
         client = MongoClient( 'mongodb://%s:%s@34.90.240.64:27017' % (user, pw))
         self.db = client.data
