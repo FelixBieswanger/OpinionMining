@@ -45,10 +45,10 @@ for i in range(pages):
             for part in parts:
                 text += part.text
             store["text"] = text
-
-            db.insert_data(collection="article", data=store)
         except Exception as e:
             logger.warning(e)
             pass
+        
+        db.insert_data(collection="article", data=store)
 
         
