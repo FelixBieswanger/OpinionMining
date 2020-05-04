@@ -6,7 +6,7 @@ import json
 import keys
 from bs4 import BeautifulSoup
 from database import Database
-
+import time
 
 search_term = "digitization"
 logger = Logger(site="NYT", search_term=search_term).getLogger()
@@ -16,7 +16,9 @@ key = keys.get_key("newyorktimes")
 response = r.get(
     "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+search_term+"&sort=newest&page=1&api-key="+key).content
 
+
 result = json.loads(response)["response"]
+
 hits = result["meta"]["hits"]
 pages = int(hits/10)
 
@@ -24,7 +26,11 @@ pages = int(hits/10)
 for i in range(pages):
     response = r.get(
         "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=digitization&sort=newest&page="+str(i)+"&api-key="+key).content
-    result = json.loads(response)["response"]
+    try:
+        result = json.loads(response)["response"]
+    except Exception as e:
+        logger.warning(e)
+        pass
 
     for doc in result["docs"]:
         try:
@@ -48,7 +54,8 @@ for i in range(pages):
         except Exception as e:
             logger.warning(e)
             pass
-        
-        db.insert_data(collection="article", data=store)
 
-        
+        db.insert_data(collection="article", data=store)
+    time.sleep(3)
+
+
