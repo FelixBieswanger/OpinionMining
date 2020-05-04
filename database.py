@@ -22,7 +22,7 @@ class Database:
         #check if article has already bin insertet by date,title,author
         if self.db[collection].count_documents({"article_url": data["article_url"]}):
             self.logger.warn("Article already in db")
-            return "already"
+            return
         
         #insert article information into db
         try:
