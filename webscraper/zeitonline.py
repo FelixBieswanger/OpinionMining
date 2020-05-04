@@ -1,10 +1,17 @@
 import requests
 from bs4 import BeautifulSoup as BS
+import sys
+sys.path.append(
+    "/Users/felixbieswanger/Desktop/Uni_Stuff/Bachelorarbeit/OpionionMining")
+import keys
+
+user = keys.get_key("zeituser")
+pw = keys.get_key("zeitpw")
 
 # Fill in your details here to be posted to the login form.
 payload = {
-    'email': 'accounts@philliprundel.net',
-    'pass': 'safhaq-rosri3-cyVwib',
+    'email': user,
+    'pass': pw,
     "return_url":"https://www.zeit.de/suche/index?q=Digitalisierung&sort=aktuell&p=1"
 }
 
