@@ -43,7 +43,6 @@ for i in range(pages):
         store["text"] = text
 
         db.insert_data(collection="article",data=store)
-break
 
 
 
