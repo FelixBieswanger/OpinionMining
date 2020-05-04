@@ -27,7 +27,7 @@ class Database:
         #insert article information into db
         try:
             self.db.article.insert(data)
-            self.logger.info("Article succsessfully stored")
+            self.logger.info("Article succsessfully stored, URL",data["article_url"])
         except:
             self.logger.critical("Article could not be stored")
             
