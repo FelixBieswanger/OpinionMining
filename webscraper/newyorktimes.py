@@ -23,7 +23,7 @@ hits = result["meta"]["hits"]
 pages = int(hits/10)
 
 
-for i in range(pages):
+for i in range(57,pages):
     response = r.get(
         "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=digitization&sort=newest&page="+str(i)+"&api-key="+key).content
     try:
@@ -43,6 +43,8 @@ for i in range(pages):
             store["section"] = doc["section_name"]
             store["wordcount"] = doc["word_count"]
             store["headline"] = doc["headline"]
+            store["search-term"] = search_term
+            store["source"] = "NYT"
 
             article = BeautifulSoup(r.get(url).content, "html.parser")
             section = article.find("section", {"class": "meteredContent"})
