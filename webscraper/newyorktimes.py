@@ -42,6 +42,7 @@ for i in range(pages):
             store["doc_type"] = doc["document_type"]
             store["section"] = doc["section_name"]
             store["wordcount"] = doc["word_count"]
+            store["headline"] = doc["headline"]
 
             article = BeautifulSoup(r.get(url).content, "html.parser")
             section = article.find("section", {"class": "meteredContent"})
@@ -51,11 +52,12 @@ for i in range(pages):
             for part in parts:
                 text += part.text
             store["text"] = text
+
+            db.insert_data(collection="article", data=store)
         except Exception as e:
             logger.warning(e)
             pass
-
-        db.insert_data(collection="article", data=store)
+        
     time.sleep(3)
 
 
