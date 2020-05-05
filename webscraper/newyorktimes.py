@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from database import Database
 
 
-search_term = "digitization"
+search_term = "digital"
 logger = Logger(site="NYT", search_term=search_term).getLogger()
 db = Database(logger)
 key = keys.get_key("newyorktimes")
