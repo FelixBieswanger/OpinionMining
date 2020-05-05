@@ -4,3 +4,4 @@ workspace.code-workspace/
 logs/
 resources/
 *.pyc
+test.py
