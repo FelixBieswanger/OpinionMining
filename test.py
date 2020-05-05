@@ -12,7 +12,7 @@ for doc in db.get_all(collection="article"):
     except:
         pass
    
-
+adsd
 print(counter)
 
 
