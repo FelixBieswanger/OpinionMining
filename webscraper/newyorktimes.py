@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from database import Database
 import time
 
-search_term = "digitization"
+search_term = "digitalization"
 logger = Logger(site="NYT", search_term=search_term).getLogger()
 db = Database(logger)
 key = keys.get_key("newyorktimes")
@@ -23,9 +23,9 @@ hits = result["meta"]["hits"]
 pages = int(hits/10)
 
 
-for i in range(57,pages):
+for i in range(i,pages):
     response = r.get(
-        "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=digitization&sort=newest&page="+str(i)+"&api-key="+key).content
+        "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+search_term+"&sort=newest&page="+str(i)+"&api-key="+key).content
     try:
         result = json.loads(response)["response"]
     except Exception as e:
