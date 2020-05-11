@@ -7,6 +7,7 @@ import keys
 from bs4 import BeautifulSoup
 from database import Database
 import time
+from useragent import get_random_useraget
 
 search_term = "digitalization"
 logger = Logger(site="NYT", search_term=search_term).getLogger()
@@ -46,7 +47,8 @@ for i in range(i,pages):
             store["search-term"] = search_term
             store["source"] = "NYT"
 
-            article = BeautifulSoup(r.get(url).content, "html.parser")
+            article = BeautifulSoup(
+                r.get(url, headers={"User-Agent": get_random_useraget()}).content, "html.parser")
             section = article.find("section", {"class": "meteredContent"})
             parts = section.find_all("div", {"class": "StoryBodyCompanionColumn"})
 
