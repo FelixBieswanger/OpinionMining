@@ -24,7 +24,7 @@ hits = result["meta"]["hits"]
 pages = int(hits/10)
 
 
-for i in range(i,pages):
+for i in range(1,pages):
     response = r.get(
         "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+search_term+"&sort=newest&page="+str(i)+"&api-key="+key).content
     try:
