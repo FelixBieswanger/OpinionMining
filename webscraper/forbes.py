@@ -34,7 +34,7 @@ header = {
 
 
 
-for i in range(750,10000,20):
+for i in range(900,10000,20):
 
     response = requests.get("https://www.forbes.com/simple-data/search/more/?start="+str(i)+"&q="+search_term, headers=header)
     base = BeautifulSoup(response.content,"html.parser")
