@@ -13,5 +13,5 @@ desktop_agents = ['Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML
 
 
 def get_random_useraget():
-    return choice(desktop_agents)
+    return {"User-Agent":choice(desktop_agents)}
 
