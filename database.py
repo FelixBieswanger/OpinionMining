@@ -35,11 +35,15 @@ class Database:
         return [doc for doc in self.db[collection].find()]
 
 
-    def update_article(self,data):
+    def get_querry(self,collection,querry):
+        return [doc for doc in self.db[collection].find(querry)]
+
+
+    def update_article(self,collection,data):
         try:
-            article = self.db.article.find_one_and_replace({"_id": ObjectId(data["_id"])},data)
+            self.db[collection].find_one_and_replace({"_id": ObjectId(data["_id"])},data)
         except:
-            print("Post with ID could not be found")
+            print("No Article was found with givin ID")
             pass
 
 
@@ -49,14 +53,6 @@ class Database:
         except:
             return None
         
-
-    def getNewDoc(self):
-        docs = self.db.article.find()
-        trigger = True
-        for i in range(docs.count()):
-            found = self.find_by_id(id= docs[i]["_id"], collection="stich")
-            if found is None:
-                return docs[i]
 
 
 
