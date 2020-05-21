@@ -12,7 +12,7 @@ db = Database()
 german_articles = db.get_querry(collection="article", querry={
     "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
 
-index = 112
+index = 186
 old_index = 0
 
 while index<len(german_articles):
