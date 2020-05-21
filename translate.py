@@ -1,5 +1,5 @@
 from google.cloud import translate_v2
-from google.api_core.exceptions import Forbidden
+from google.api_core.exceptions import Forbidden,ServiceUnavailable
 from database import Database
 import preprocessing
 import time
@@ -41,7 +41,7 @@ while index<len(german_articles):
     try:
         try:
             result = translate_client.translate(clean_text,target_language="en")
-        except Forbidden:
+        except (Forbidden,ServiceUnavailable):
             print("Wait because of rate limit")
             time.sleep(10)
             continue
