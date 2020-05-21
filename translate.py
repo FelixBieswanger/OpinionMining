@@ -9,7 +9,7 @@ translate_client = translate_v2.Client()
 german_articles = db.get_querry(collection="article", querry={
     "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
 
-for article in german_articles[:10]:
+for article in german_articles:
 
     start = time.time()
 
@@ -44,8 +44,6 @@ for article in german_articles[:10]:
 
         print("Translated ", german_articles.index(
             article)+1, "of", len(german_articles), "| est. remaining duration",remaining_time,"min")
-
-        
 
     except Exception as e:
         print(e.with_traceback())
