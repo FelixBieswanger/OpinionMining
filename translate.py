@@ -31,11 +31,5 @@ for article in german_articles[:10]:
         print(e.with_traceback())
         print("Fail Index",german_articles.index(article))
         break
-
-    print(article)
-    print()
-    print()
-    print()
-    print()
     
      
