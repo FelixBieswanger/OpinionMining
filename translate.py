@@ -1,15 +1,23 @@
 from google.cloud import translate_v2
+from google.api_core.exceptions import Forbidden
 from database import Database
 import preprocessing
 import time
+from urllib.error import HTTPError
+import traceback
 
 db = Database()
-translate_client = translate_v2.Client()
+
 
 german_articles = db.get_querry(collection="article", querry={
     "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
 
-for article in german_articles:
+index = 0
+
+while index<len(german_articles):
+
+    translate_client = translate_v2.Client()
+    article = german_articles[index]
 
     start = time.time()
 
@@ -25,14 +33,16 @@ for article in german_articles:
     clean_text = preprocessing.clean_string(raw_text)
 
     try:
-        result = translate_client.translate(clean_text, target_language="en")
+        try:
+            result = translate_client.translate(clean_text, target_language="en")
+        except Forbidden:
+            print("Wait because of rate limit")
+            time.sleep(10)
+            continue
+
         translated_text = result["translatedText"]
         article["text"] = translated_text
         db.update_article(collection="article", data=article)
-
-
-        time.sleep(0.5)
-
         end = time.time()
         #sec
         duration = end - start
@@ -41,12 +51,13 @@ for article in german_articles:
         #min
         remaining_time = int(remaining_time/60)
 
-
         print("Translated ", german_articles.index(
-            article)+1, "of", len(german_articles), "| est. remaining duration",remaining_time,"min")
+                article)+1, "of", len(german_articles), "| est. remaining duration", remaining_time, "min")
+
+        index+=1
 
     except Exception as e:
-        print(e.with_traceback())
+        traceback.print_exc()
         print("Fail Index",german_articles.index(article))
         break
     
