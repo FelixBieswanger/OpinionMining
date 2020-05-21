@@ -1,4 +1,4 @@
-from google.cloud import translate_v2
+from google.cloud import translate
 from google.api_core.exceptions import Forbidden
 from database import Database
 import preprocessing
@@ -12,14 +12,20 @@ db = Database()
 german_articles = db.get_querry(collection="article", querry={
     "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
 
-index = 0
+index = 112
+old_index = 0
 
 while index<len(german_articles):
 
-    translate_client = translate_v2.Client()
+    if index != old_index:
+        start = time.time()
+
+    old_index = index
+
+    translate_client = translate.TranslationServiceClient()
     article = german_articles[index]
 
-    start = time.time()
+    
 
     if "text-de" in article:
         #case falls bereits übersetzt wurde
@@ -34,7 +40,7 @@ while index<len(german_articles):
 
     try:
         try:
-            result = translate_client.translate(clean_text, target_language="en")
+            result = translate_client.translate_text()
         except Forbidden:
             print("Wait because of rate limit")
             time.sleep(10)
