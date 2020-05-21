@@ -1,47 +1,41 @@
-from googletrans import Translator
+from google.cloud import translate_v2
 from database import Database
 import preprocessing
 
-
 db = Database()
+translate_client = translate_v2.Client()
 
 german_articles = db.get_querry(collection="article", querry={
     "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
 
-for article in german_articles[530:]:
-    if "text-de" not in article:
-        trans = Translator(service_urls=["translate.google.com"])
-        try:
-            #save original text
-            article["text-de"] = article["text"]
-            clean_text = preprocessing.clean_string(article["text"])
-
-            translated_text = ""
-            rest = clean_text
-            while len(rest) != 0:
-                if len(rest) > 9999:
-                    cutoff = rest[:9999].rfind(".")
-                    part = rest[:cutoff]
-                    rest = rest[cutoff:]
-                else:
-                    part = rest
-                    rest = []
-            
-                translated_text += trans.translate(part, dest="en").text
-
-            article["text"] = translated_text
-            db.update_article(collection="article",data=article)
-
-
-            print(german_articles.index(article), "of",
-                  len(german_articles), "translated")
-        except Exception as e:
-            print(e.with_traceback())
-            print("index", german_articles.index(article))
-            break
+for article in german_articles[:10]:
+    if "text-de" in article:
+        #case falls bereits übersetzt wurde
+        raw_text = article["text-de"]
     else:
-        print("Already Translated")
+        #case falls noch nicht übersetzt wurde
+        #orginaltext in text-de abspeichern
+        raw_text = article["text"]
+        article["text-de"] = raw_text
 
+    clean_text = preprocessing.clean_string(raw_text)
 
+    try:
+        result = translate_client.translate(clean_text, target_language="en")
+        translated_text = result["translatedText"]
+        article["text"] = translated_text
+        db.update_article(collection="article", data=article)
 
+        print("Translated ", german_articles.index(article)+1,"of",len(german_articles))
+    except Exception as e:
+        print(e.with_traceback())
+        print("Fail Index",german_articles.index(article))
+        break
 
+    print(article)
+    print()
+    print()
+    print()
+    print()
+    
+     
