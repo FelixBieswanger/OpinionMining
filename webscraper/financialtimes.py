@@ -14,10 +14,10 @@ from useragent import get_random_useraget
 from datetime import datetime
 
 
-search_terms =["digitalisation"]#,"digitisation","digital+transformation"]
+search_terms =["digitisation","digital+transformation"] # + Digitalisation
 
 for search_term in search_terms:
-    
+
     logger = Logger(site="financialtimes", search_term=search_term).getLogger()
     db = Database(logger)
 
