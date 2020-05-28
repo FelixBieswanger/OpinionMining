@@ -29,7 +29,7 @@ actual_label = list()
 
 digitalisierung = list()
 for doc in data:
-    if doc["text"].count("Digitalisierung") >= 5:
+    if doc["text"].count("Digitalisierung") >= 6:
         digitalisierung.append(doc)
         actual_label.append(1)
 
@@ -39,8 +39,11 @@ for doc in data:
         kein_digitalisierung.append(doc)
         actual_label.append(0)
 
-    if len(digitalisierung) == len(kein_digitalisierung):
+    if len(digitalisierung)*5 == len(kein_digitalisierung):
         break
+
+print("len digi",len(digitalisierung))
+print("len not digi",len(kein_digitalisierung))
 
 data = digitalisierung+kein_digitalisierung
 
@@ -53,7 +56,6 @@ for doc,label in zip(data,actual_label):
 
 train = [preprocessing.clean_string(i["text"]) for i in data]
 #train = preprocessing.get_lemma(train)
-
 
 LabeledSentence1 = gensim.models.doc2vec.TaggedDocument
 all_content_train = list()
@@ -74,88 +76,43 @@ class EpochLogger(CallbackAny2Vec):
 
 epochlogger = EpochLogger()
 
-d2v_model = Doc2Vec(all_content_train, vector_size=200, window=5,
-                    min_count=2, workers=4, dm=0, alpha=0.025, min_alpha=0.001, callbacks=[epochlogger],seed=SEED)
+d2v_model = Doc2Vec(all_content_train, vector_size=400, window=9,
+                    min_count=2, workers=4, dm=1, alpha=0.025, min_alpha=0.001, callbacks=[epochlogger],seed=SEED)
 d2v_model.train(all_content_train, total_examples=d2v_model.corpus_count,
-                epochs=100, start_alpha=0.002)
+                epochs=200, start_alpha=0.002)
 
-
-model = KMeans(max_iter=300,random_state=SEED)
-#model = DBSCAN(eps=0.001,min_samples=40)
 vecs = sk_pre.StandardScaler().fit_transform(d2v_model.docvecs.vectors_docs)
-pca = PCA(n_components=200).fit(vecs)
-
-sum_pca_variance = 0.0
-pca_variance_threshold = 0
-for variance in pca.explained_variance_ratio_:
-    sum_pca_variance += variance
-
-    if sum_pca_variance >= 0.90:
-        pca_variance_threshold = pca.explained_variance_ratio_.tolist().index(variance)
-        break
+vecs = PCA(n_components=3).fit_transform(vecs)
 
 
-print(pca_variance_threshold)
-vecs = pca.transform(vecs)
-vecs = vecs[:,:pca_variance_threshold]
 
-km = model.fit(vecs)
-labels = model.labels_.tolist()
-datapoint = vecs[:,:3]
-
-closest, _ = pairwise_distances_argmin_min(km.cluster_centers_, vecs)
-index_clostest_0 = closest[0]
-index_clostest_1 = closest[1]
-
-cluster0 = list()
+digi = list()
+notdigi = list()
 hovertext0 = list()
-
-cluster1 = list()
 hovertext1 = list()
 
-for label,hover,data in zip(labels,hovertext,datapoint):
-    if label == 0:
-        cluster0.append(data)
+for label,vec,hover in zip(actual_label,vecs,hovertext):
+    if label == 1:
+        digi.append(vec)
         hovertext0.append(hover)
     else:
-        cluster1.append(data)
+        notdigi.append(vec)
         hovertext1.append(hover)
 
-cluster0 = np.array(cluster0)
-cluster1 = np.array(cluster1)
+print("after len digi",len(digi))
+print("after len notdigi", len(notdigi))
+
+
+digi = np.array(digi)
+notdigi = np.array(notdigi)
+
 
 fig = go.Figure(data=[
-    go.Scatter3d(x=cluster0[:, 0], y=cluster0[:, 1], z=cluster0[:, 2],
-                 mode='markers',name="Cluster 0", hovertext=hovertext0, marker={"size": 3}),
-    go.Scatter3d(x=cluster1[:, 0],name="Cluster 1", y=cluster1[:, 1], z=cluster1[:, 2],
+    go.Scatter3d(x=digi[:, 0], y=digi[:, 1], z=digi[:, 2],
+                 mode='markers',name="Digi", hovertext=hovertext0, marker={"size": 3}),
+    go.Scatter3d(x=notdigi[:, 0], name="Not Digi", y=notdigi[:, 1], z=notdigi[:, 2],
                  mode='markers', hovertext=hovertext1, marker={"size": 3})
     ])
-
-"""
-fig.update_layout({
-    "scene":{
-        "annotations":[
-            {
-                "x":datapoint[index_clostest_0, 0],
-                "y":datapoint[index_clostest_0, 1],
-                "z":datapoint[index_clostest_0, 2],
-                "text":"Most Typical Article Cluster 0 <br>"+hovertext[index_clostest_0],
-                "ax": 0,
-                "ay":-300
-            },
-            {
-                "x": datapoint[index_clostest_1, 0],
-                "y":datapoint[index_clostest_1, 1],
-                "z":datapoint[index_clostest_1, 2],
-                "text":"Most Typical Article Cluster 1 <br>"+hovertext[index_clostest_1],
-                "ax": 0,
-                "ay":-300
-            }
-        ]
-    }
-})
-
-"""
 
 
 fig.write_html("/Users/felixbieswanger/Downloads/result" +

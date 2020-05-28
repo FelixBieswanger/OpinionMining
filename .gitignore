@@ -1,7 +1,6 @@
-__pycache__/
+*.pyc
 *.vscode
 workspace.code-workspace/
 logs/
 resources/
-*.pyc
 test.py

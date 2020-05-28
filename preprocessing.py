@@ -5,7 +5,7 @@ import spacy
 
 
 def clean_string(string):
-    string = re.sub('[^a-zA-Zäüöß]', ' ', string)
+    string = re.sub('[^a-zA-Zäüöß.,]', ' ', string)
     string = string.strip()
     string = re.sub('[  ]+', ' ', string)
     return string
@@ -27,10 +27,6 @@ def get_lemma(docs):
         result.append(temp)
         print("processed",docs.index(doc),"of",len(docs))
     return result
-
-
-
-
 
 
 def remove_stopwords(tokens,lang="german"):

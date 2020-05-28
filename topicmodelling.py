@@ -10,7 +10,15 @@ db = Database()
 nlp = spacy.load("de_core_news_sm")
 
 
-data = db.get_all("article")
+data = db.get_querry(collection="article", querry={
+                     "$or": [{"source": "NYT"}]})
+
+clean = list()
+for doc in data:
+    if doc["text"].count("digital") >= 3:
+        clean.append(doc)
+
+data = clean
 
 labels = [i["search-term"] for i in data]
 text = [i["text"] for i in data]
@@ -31,8 +39,8 @@ for doc in sent:
 dictionary = corpora.Dictionary(text_data)
 corpus = [dictionary.doc2bow(text) for text in text_data]
 
-ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=3, id2word=dictionary, passes=1000)
-topics = ldamodel.print_topics(num_words=7)
+ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=5, id2word=dictionary, passes=100)
+topics = ldamodel.print_topics(num_words=10)
 for topic in topics:
     print(topic)
 

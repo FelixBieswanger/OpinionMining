@@ -1,9 +1,8 @@
 import json
 import tweepy
+import keys
 
-#get authentification keys from json file
-with open("./keys.json", "r") as file:
-    keys= json.load(file)
+keys= keys.get_key("twitter")
 
 auth = tweepy.OAuthHandler(keys["api-key"], keys["api-key-secret"])
 auth.set_access_token(keys["accsess-token"], keys["accsess-token-secret"])

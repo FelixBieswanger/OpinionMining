@@ -1,18 +1,10 @@
-from database import Database
+from textblob import TextBlob
 
-db = Database()
-
-counter = 0
-
-for doc in db.get_all(collection="article"):
-    try:
-        if doc["text"].count("digitization") >= 2:
-            print(doc[""])
-            counter+=1
-    except:
-        pass
-   
-adsd
-print(counter)
+blob = TextBlob("I think this was the best movie ever!")
 
 
+print(blob.sentiment)
+
+
+score = (blob.sentiment.polarity + blob.sentiment.subjectivity)/2
+print(score)
