@@ -8,28 +8,17 @@ from bs4 import BeautifulSoup
 import requests
 import time
 import keys
-from datetime import datetime
+import cookie_maker
 
 search_term = "digitalization"
 logger = Logger(site="forbes", search_term=search_term).getLogger()
 db = Database(logger)
 
 
-cookies = {
-    "notice_preferences": "2:1a8b5228dd7ff0717196863a5d28ce6c",
-    "notice_gdpr_prefs": "0,1,2:1a8b5228dd7ff0717196863a5d28ce6c"
-}
+cookies = keys.get_key("forbes-cookies")
 
-cookie_string = ""
-for name in cookies.keys():
-    cookie_string+=name
-    cookie_string+="="
-    cookie_string+=cookies[name]
-    cookie_string+=";"
-
-cookie_string = cookie_string[:-2]
 header = {
-    "Cookie": cookie_string
+    "Cookie": cookie_maker.create_cookie_string(cookies)
 }
 
 
