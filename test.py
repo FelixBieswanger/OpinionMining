@@ -1,10 +1,10 @@
-from textblob import TextBlob
-
-blob = TextBlob("I think this was the best movie ever!")
+from database import Database
 
 
-print(blob.sentiment)
 
+db= Database()
 
-score = (blob.sentiment.polarity + blob.sentiment.subjectivity)/2
-print(score)
+deutsche = db.get_querry(collection="article", querry={
+                     "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
+
+print(deutsche[2500])
