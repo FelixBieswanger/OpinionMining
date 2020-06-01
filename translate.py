@@ -7,7 +7,7 @@ from urllib.error import HTTPError
 import traceback
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./resources/opinionmininghdm-f5403fd25fa4.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./resources/google_cloud_api.json"
 
 db = Database()
 
