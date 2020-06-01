@@ -15,7 +15,7 @@ db = Database()
 german_articles = db.get_querry(collection="article", querry={
     "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
 
-index = 755
+index = 2585
 old_index = 0
 
 while index<len(german_articles):
@@ -28,7 +28,7 @@ while index<len(german_articles):
     translate_client = translate_v2.Client()
     article = german_articles[index]
 
-    if "text-de" not in article:
+    if "text-de" not in article and len(article["text"].encode("utf-8")) < 204800:
        
         raw_text = article["text"]
         article["text-de"] = raw_text
@@ -65,6 +65,6 @@ while index<len(german_articles):
             break
     else:
         index+=1
-        print("already translated")
+        print("already translated or to big!")
         
         
