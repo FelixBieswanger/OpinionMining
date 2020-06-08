@@ -13,7 +13,8 @@ class Database:
         ip = keys.get_key("mongoip")
         print("mongodb://"+user+":"+pw +"@"+ip)
         
-        client = MongoClient( 'mongodb://%s:%s@34.90.240.64:27017' % (user, pw))
+        client = MongoClient(
+            'mongodb://%s:%s@35.204.216.175:27017' % (user, pw))
         self.db = client.data
 
         self.logger = logger
