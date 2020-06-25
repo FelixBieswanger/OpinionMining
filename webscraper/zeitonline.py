@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from database import Database
 from logger import Logger
 
-search_term = "digitalisierung"
+search_term = "digitale+transformation"
 logger = Logger(site="zeit", search_term=search_term).getLogger()
 db = Database(logger)
 
@@ -19,7 +19,7 @@ for i in range(277):
     payload = {
         'email': user,
         'pass': pw,
-        "return_url": "https://www.zeit.de/suche/index?q=Digitalisierung&sort=aktuell&p="+str(i)
+        "return_url": "https://www.zeit.de/suche/index?q="+search_term+"&sort=aktuell&p="+str(i)
     }
     # create Session to login and send login information with every further request
     with requests.Session() as s:
