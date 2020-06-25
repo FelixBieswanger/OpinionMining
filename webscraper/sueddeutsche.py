@@ -7,7 +7,7 @@ import requests
 import keys
 
 
-search_term = "Digitalisierung"
+search_term = "digitale+transformation"
 logger = Logger(site="sueddeutsche", search_term=search_term).getLogger()
 db = Database(logger)
 
