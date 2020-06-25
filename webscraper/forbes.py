@@ -10,7 +10,7 @@ import time
 import keys
 import cookie_maker
 
-search_term = "digitalization"
+search_terms = ["digital+transformation","digitization"]
 logger = Logger(site="forbes", search_term=search_term).getLogger()
 db = Database(logger)
 
@@ -22,39 +22,39 @@ header = {
 }
 
 
+for search_term in search_terms:
+    for i in range(900,10000,20):
 
-for i in range(900,10000,20):
+        response = requests.get("https://www.forbes.com/simple-data/search/more/?start="+str(i)+"&q="+search_term, headers=header)
+        base = BeautifulSoup(response.content,"html.parser")
+        articles = base.find_all("article")
 
-    response = requests.get("https://www.forbes.com/simple-data/search/more/?start="+str(i)+"&q="+search_term, headers=header)
-    base = BeautifulSoup(response.content,"html.parser")
-    articles = base.find_all("article")
+        for article in articles:
+            try:
 
-    for article in articles:
-        try:
+                store = dict()
 
-            store = dict()
+                store["search-term"]=search_term
+                store["source"] = "forbes"
+                store["date"] = datetime.fromtimestamp(int(article["data-date"])/1000)
+                head_link = article.find("a", {"class": "stream-item__title"})
+                link = head_link["href"]
+                store["headline"] = head_link.text.strip()
+                store["article_url"] = link
 
-            store["search-term"]=search_term
-            store["source"] = "forbes"
-            store["date"] = datetime.fromtimestamp(int(article["data-date"])/1000)
-            head_link = article.find("a", {"class": "stream-item__title"})
-            link = head_link["href"]
-            store["headline"] = head_link.text.strip()
-            store["article_url"] = link
+                page = BeautifulSoup(requests.get(link, headers=header).content,"html.parser")
 
-            page = BeautifulSoup(requests.get(link, headers=header).content,"html.parser")
+                text = ""
+                for p in page.find("div", {"class": "article-body"}).find_all("p", recursive=False):
+                    text+=p.text
 
-            text = ""
-            for p in page.find("div", {"class": "article-body"}).find_all("p", recursive=False):
-                text+=p.text
+                store["text"] = text
+                
+                db.insert_data(collection="article", data=store)
 
-            store["text"] = text
-            
-            db.insert_data(collection="article", data=store)
+            except Exception as e:
+                logger.warning(e)
+                logger.warning(str(i))
+                pass
 
-        except Exception as e:
-            logger.warning(e)
-            logger.warning(str(i))
-            pass
-
-    time.sleep(3)
+        time.sleep(3)
