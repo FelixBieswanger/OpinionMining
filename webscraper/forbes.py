@@ -11,18 +11,17 @@ import keys
 import cookie_maker
 
 search_terms = ["digital+transformation","digitization"]
-logger = Logger(site="forbes", search_term=search_term).getLogger()
-db = Database(logger)
-
-
 cookies = keys.get_key("forbes-cookies")
-
 header = {
     "Cookie": cookie_maker.create_cookie_string(cookies)
 }
 
 
 for search_term in search_terms:
+    logger = Logger(site="forbes", search_term=search_term).getLogger()
+    db = Database(logger)
+
+
     for i in range(900,10000,20):
 
         response = requests.get("https://www.forbes.com/simple-data/search/more/?start="+str(i)+"&q="+search_term, headers=header)
