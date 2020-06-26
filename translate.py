@@ -12,10 +12,9 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./resources/google_cloud_api.jso
 db = Database()
 
 
-german_articles = db.get_querry(collection="article", querry={
-    "$or": [{"source": "sueddeutsche"}, {"source": "zeit"}]})
+german_articles = db.get_querry(collection="date", querry={"$and": [{"language": "de"}, {"text-de": {"$exists":False}}]})
 
-index = 2585
+index = 655
 old_index = 0
 
 while index<len(german_articles):
@@ -28,7 +27,7 @@ while index<len(german_articles):
     translate_client = translate_v2.Client()
     article = german_articles[index]
 
-    if "text-de" not in article and len(article["text"].encode("utf-8")) < 204800:
+    if "text-de" not in article and len(article["text"].encode("utf-16")) < 204800:
        
         raw_text = article["text"]
         article["text-de"] = raw_text
@@ -46,16 +45,8 @@ while index<len(german_articles):
             translated_text = result["translatedText"]
             article["text"] = translated_text
             db.update_article(collection="article", data=article)
-            end = time.time()
-            #sec
-            duration = end - start
-        
-            remaining_time = (len(german_articles)-german_articles.index(article))*duration
-            #min
-            remaining_time = int(remaining_time/60)
-
             print("Translated ", german_articles.index(
-                    article)+1, "of", len(german_articles), "| est. remaining duration", remaining_time, "min")
+                    article)+1, "of", len(german_articles))
 
             index+=1
 
