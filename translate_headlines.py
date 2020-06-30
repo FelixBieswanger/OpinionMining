@@ -26,37 +26,32 @@ while index<len(german_articles):
 
     translate_client = translate_v2.Client()
     article = german_articles[index]
+    
+    raw_text = article["headline"]
+    article["headline-de"] = raw_text
 
-    if "headline-de" not in article:
-       
-        raw_text = article["headline"]
-        article["headline-de"] = raw_text
+    clean_text = preprocessing.clean_string(raw_text)
 
-        clean_text = preprocessing.clean_string(raw_text)
-
+    try:
         try:
-            try:
-                result = translate_client.translate(clean_text,target_language="en")
-            except (Forbidden,ServiceUnavailable):
-                print("Wait because of rate limit")
-                time.sleep(10)
-                continue
+            result = translate_client.translate(clean_text,target_language="en")
+        except (Forbidden,ServiceUnavailable):
+            print("Wait because of rate limit")
+            time.sleep(10)
+            continue
 
-            translated_text = result["translatedText"]
-            article["headline"] = translated_text
-            db.update_article(collection="date", data=article)
-            
-            print("Translated ", german_articles.index(
-                    article)+1, "of", len(german_articles))
+        translated_text = result["translatedText"]
+        article["headline"] = translated_text
+        db.update_article(collection="date", data=article)
+        
+        print("Translated ", german_articles.index(
+                article)+1, "of", len(german_articles))
 
-            index+=1
-
-        except Exception as e:
-            traceback.print_exc()
-            print("Fail Index",german_articles.index(article))
-            break
-    else:
         index+=1
-        print("already translated or to big!")
+
+    except Exception as e:
+        traceback.print_exc()
+        print("Fail Index",german_articles.index(article))
+        break
         
         
