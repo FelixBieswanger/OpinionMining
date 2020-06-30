@@ -5,9 +5,14 @@ import spacy
 
 
 def clean_string(string):
-    string = re.sub('[^a-zA-Zäüöß.,]', ' ', string)
+    #keep ! because a lot of meaning in sentiment 
+    string = re.sub("[^a-zA-Z.!,[^']]", ' ', string)
+    string = string.replace('“', "")
+    string = string.replace('”', "")
+    string = string.replace('"', "")
     string = string.strip()
     string = re.sub('[  ]+', ' ', string)
+    string = string.lower()
     return string
 
 def get_sentences(string):
@@ -29,18 +34,31 @@ def get_lemma(docs):
     return result
 
 
-def remove_stopwords(tokens,lang="german"):
-    all_tokens= tokens
+def remove_stopwords_sent(texts):
+    print("loading model..")
+    nlp = spacy.load("en_core_web_md")
+    print("model loaded!")
 
     result = list()
-    for sent in all_tokens:
-        sent_result = list()
-        for token in sent:
-            if token not in stopwords.words(lang):
-                sent_result.append(token)
-        result.append(sent_result)
-
+    pipe = list(nlp.pipe(texts, disable=["parser", "ner", "textcat"]))
+    for doc in pipe:
+        result.append([str(token).lower() for token in doc if token.pos_ == "NOUN" and len(token) > 1])
+        print("processed",pipe.index(doc),"of",len(texts))
     return result
+
+def preprocessing_doc2vec(list_of_texts):
+    print("loading model..")
+    nlp = spacy.load("en_core_web_md")
+    print("model loaded!")
+
+    result = list()
+    pipe = list(nlp.pipe(list_of_texts, disable=["parser", "ner", "textcat"]))
+    for doc in pipe:
+        processed_doc = " ".join([str(token.lemma_) for token in doc if token.pos_ == "NOUN" and len(token) > 2])
+        result.append(processed_doc)
+    return result
+
+
 
 def pos_tag(text):
     nlp = load('de_core_news_md')
