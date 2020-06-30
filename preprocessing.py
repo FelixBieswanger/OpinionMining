@@ -53,10 +53,12 @@ def preprocessing_doc2vec(list_of_texts):
     print("model loaded!")
 
     result = list()
-    pipe = list(nlp.pipe(list_of_texts, disable=["parser", "ner", "textcat"]))
-    for doc in pipe:
-        processed_doc = " ".join([str(token.lemma_) for token in doc if token.pos_ == "NOUN" and len(token) > 2])
-        result.append(processed_doc)
+    #pipe = list(nlp.pipe(texts, disable=["parser", "ner", "textcat"]))
+    for doc in texts:
+        processed = nlp(doc)
+        result.append([str(token).lower()
+                       for token in processed if token.pos_ == "NOUN" and len(token) > 1])
+        print("processed", pipe.index(doc), "of", len(texts))
     return result
 
 
