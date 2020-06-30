@@ -40,10 +40,11 @@ def remove_stopwords_sent(texts):
     print("model loaded!")
 
     result = list()
-    pipe = list(nlp.pipe(texts, disable=["parser", "ner", "textcat"]))
-    for doc in pipe:
-        result.append([str(token).lower() for token in doc if token.pos_ == "NOUN" and len(token) > 1])
-        print("processed",pipe.index(doc),"of",len(texts))
+    #pipe = list(nlp.pipe(texts, disable=["parser", "ner", "textcat"]))
+    for doc in texts:
+        processed = nlp(doc)
+        result.append([str(token).lower() for token in processed if token.pos_ == "NOUN" and len(token) > 1])
+        print("processed", pipe.index(doc), "of", len(texts))
     return result
 
 def preprocessing_doc2vec(list_of_texts):
