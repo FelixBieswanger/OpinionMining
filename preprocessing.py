@@ -58,7 +58,7 @@ def preprocessing_doc2vec(list_of_texts):
         processed = nlp(doc)
         result.append([str(token).lower()
                        for token in processed if token.pos_ == "NOUN" and len(token) > 1])
-        print("processed", pipe.index(doc), "of", len(texts))
+        print("processed", list_of_texts.index(doc), "of", len(list_of_texts))
     return result
 
 
