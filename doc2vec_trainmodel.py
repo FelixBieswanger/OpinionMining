@@ -1,16 +1,9 @@
-import plotly.graph_objects as go
-import plotly.express as px
-import pickle
 import pandas as pd
 import numpy
 from datetime import datetime
 import random
 import numpy as np
 import gensim
-from sklearn import preprocessing as sk_pre
-from sklearn.cluster import DBSCAN, KMeans
-from sklearn.metrics import pairwise_distances_argmin_min
-from sklearn.decomposition import PCA
 from gensim.models import Doc2Vec
 from database import Database
 import preprocessing
