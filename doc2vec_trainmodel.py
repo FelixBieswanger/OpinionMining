@@ -37,6 +37,9 @@ epochlogger = EpochLogger()
 
 d2v_model = Doc2Vec(all_content_train, vector_size=100, window=6,
                     min_count=2, workers=4, dm=1, alpha=0.025, min_alpha=0.001, callbacks=[epochlogger],seed=SEED)
-d2v_model.train(all_content_train, total_examples=d2v_model.corpus_count, epochs=100)
+d2v_model.train(all_content_train, total_examples=d2v_model.corpus_count, epochs=1)
 
-d2v_model.save("doc2vec_models/doc2vec.model")
+now = datetime.now()
+stringtime = now.strftime("%m%d%Y_%H%M%S")
+
+d2v_model.save("doc2vec_models/doc2vec_"+stringtime+".model")
