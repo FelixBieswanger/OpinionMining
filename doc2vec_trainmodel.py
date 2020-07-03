@@ -35,9 +35,8 @@ class EpochLogger(CallbackAny2Vec):
 
 epochlogger = EpochLogger()
 
-d2v_model = Doc2Vec(all_content_train, vector_size=100, window=6,
-                    min_count=2, workers=4, dm=1, alpha=0.025, min_alpha=0.001, callbacks=[epochlogger],seed=SEED)
-d2v_model.train(all_content_train, total_examples=d2v_model.corpus_count, epochs=100)
+d2v_model = Doc2Vec(all_content_train, vector_size=60, window=4,workers=4, dm=1, callbacks=[epochlogger],seed=SEED)
+d2v_model.train(all_content_train, total_examples=d2v_model.corpus_count, epochs=40)
 
 now = datetime.now()
 stringtime = now.strftime("%m%d%Y_%H%M%S")
