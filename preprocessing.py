@@ -56,8 +56,9 @@ def preprocessing_doc2vec(list_of_texts):
     #pipe = list(nlp.pipe(texts, disable=["parser", "ner", "textcat"]))
     for doc in list_of_texts:
         processed = nlp(doc)
-        result.append([str(token).lower()
-                       for token in processed if token.pos_ == "NOUN" and len(token) > 1])
+        processed = [str(token).lower() for token in processed if token.pos_ in ["NOUN", "ADJ"] and len(token) > 1]
+        joined = " ".join(processed)
+        result.append(joined)
         print("processed", list_of_texts.index(doc), "of", len(list_of_texts))
     return result
 
@@ -84,6 +85,16 @@ def find_max(results):
             topic = tupl[0]
 
     return topic
+
+
+def preprocessing_lda(texts):
+    result = list()
+    for text in texts:
+        text = text.replace("digital transformation", "digital_transformation")
+        tokens = text.split(" ")
+        tokens = [token for token in tokens if len(token) > 2 and token not in ["p.m.", "a.m", "p.m", "a.m."]]
+        result.append(tokens)
+    return result
 
 
 
