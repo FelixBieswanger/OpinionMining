@@ -4,26 +4,38 @@ from gensim import corpora
 from database import Database
 import preprocessing
 import numpy as np
+import pandas as pd
 import random
 from datetime import datetime
+from gensim.models import CoherenceModel
 
 db = Database()
 
 data = db.get_all(collection="date")
-texts = [i["noun_lemma"] for i in data]
-text_data = preprocessing.preprocessing_lda(texts)
+text = [i["lda"] for i in source_data]
+text_data = [t.split(" ") for t in text]
 
 dictionary = corpora.Dictionary(text_data)
 corpus = [dictionary.doc2bow(text) for text in text_data]
 
-ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=20, id2word=dictionary, passes=100)
+num_topics = [15,20,25,30]
+passes = [50,100,150]
 
-now = datetime.now()
-stringtime = now.strftime("%m%d%Y_%H%M%S")
-ldamodel.save("lda_models/lda_"+stringtime+".model")
+results = dict()
 
-document_topics = [ldamodel.get_document_topics(item) for item in corpus]
+for topic in num_topics:
+    for passnum in passes:
+        ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=topic, id2word=dictionary, passes=passnum)
+        name = "lda_t"+str(topic)+"_p"+str(passnum)+"_"
 
-for topic, art in zip(document_topics, data):
-    art["topics"] = topic
-    db.update_article(collection="date",data=art)
+        now = datetime.now()
+        stringtime = now.strftime("%m%d%Y_%H%M%S")
+
+        ldamodel.save("lda_models/"+name+stringtime+".model")
+
+        coherence_model_lda = CoherenceModel(model=ldamodel, texts=text_data, dictionary=dictionary, coherence='c_v')
+        results[name] = coherence_model_lda.get_coherence()
+
+pd.Series(result, index=result.keys()).to_csv("result_lda.csv")
+
+
