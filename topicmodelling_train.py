@@ -36,6 +36,8 @@ for topic in num_topics:
         coherence_model_lda = CoherenceModel(model=ldamodel, texts=text_data, dictionary=dictionary, coherence='c_v')
         results[name] = coherence_model_lda.get_coherence()
 
+        print("done",topic,passnum)
+
 pd.Series(result, index=result.keys()).to_csv("result_lda.csv")
 
 
