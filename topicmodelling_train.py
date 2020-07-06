@@ -11,7 +11,7 @@ from gensim.models import CoherenceModel
 
 db = Database()
 
-data = db.get_all(collection="date")
+source_data = db.get_all(collection="date")
 text = [i["lda"] for i in source_data]
 text_data = [t.split(" ") for t in text]
 
