@@ -25,18 +25,27 @@ results = dict()
 
 for topic in num_topics:
     for passnum in passes:
-        ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=topic, id2word=dictionary, passes=passnum)
-        name = "lda_t"+str(topic)+"_p"+str(passnum)+"_"
 
-        now = datetime.now()
-        stringtime = now.strftime("%m%d%Y_%H%M%S")
+        if (topic == 15 and passes == 50) or (topic == 15 and passes == 100):
+            print("continue")
+            continue
 
-        ldamodel.save("lda_models/"+name+stringtime+".model")
+        try:
+            ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=topic, id2word=dictionary, passes=passnum)
+            name = "lda_t"+str(topic)+"_p"+str(passnum)+"_"
 
-        coherence_model_lda = CoherenceModel(model=ldamodel, texts=text_data, dictionary=dictionary, coherence='c_v')
-        results[name] = coherence_model_lda.get_coherence()
+            now = datetime.now()
+            stringtime = now.strftime("%m%d%Y_%H%M%S")
 
-        print("done",topic,passnum)
+            ldamodel.save("lda_models/"+name+stringtime+".model")
+
+            coherence_model_lda = CoherenceModel(model=ldamodel, texts=text_data, dictionary=dictionary, coherence='c_v')
+            results[name] = coherence_model_lda.get_coherence()
+
+            print("done",topic,passnum)
+        except Exception as e:
+            with open("lda_log.txt","a") as file:
+                file.write(e)
 
 pd.Series(result, index=result.keys()).to_csv("result_lda.csv")
 
