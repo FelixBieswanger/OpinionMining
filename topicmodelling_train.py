@@ -26,7 +26,7 @@ results = dict()
 for topic in num_topics:
     for passnum in passes:
 
-        if (topic == 15 and passnum == 50) or (topic == 15 and passnum  = 100):
+        if (topic == 15 and passnum == 50) or (topic == 15 and passnum == 100):
             print("continue")
             continue
 
