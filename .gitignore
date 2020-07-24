@@ -1,6 +1,5 @@
 *.pyc
 *.vscode
 workspace.code-workspace/
-logs/
 resources/
 test.py

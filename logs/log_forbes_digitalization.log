@@ -1,0 +1,362 @@
+INFO;2020-05-19 16:41:12,793;logger.py;11;=====================================
+INFO;2020-05-19 16:41:12,793;logger.py;12;Srart Scrape of forbes with search-term 'digitalization'
+WARNING;2020-05-19 16:41:13,719;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:13,829;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:13,941;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:14,043;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:14,146;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:14,265;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:14,374;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:14,494;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:14,619;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:15,190;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:15,300;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:15,920;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,027;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,132;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,236;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,344;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,450;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,554;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,656;forbes.py;66;'article_url'
+WARNING;2020-05-19 16:41:16,765;forbes.py;66;'article_url'
+INFO;2020-05-19 16:42:09,415;logger.py;11;=====================================
+INFO;2020-05-19 16:42:09,416;logger.py;12;Srart Scrape of forbes with search-term 'digitalization'
+INFO;2020-05-19 16:42:11,660;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/rhockett/2020/05/17/digital-greenbacks/
+INFO;2020-05-19 16:42:11,892;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/05/18/welcome-to-the-digital-imperative/
+INFO;2020-05-19 16:42:12,121;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/05/19/digital-is-an-imperative-for-the-future-of-business/
+INFO;2020-05-19 16:42:12,408;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/05/18/handling-delays-and-stoppages-in-digital-transformation/
+INFO;2020-05-19 16:42:12,660;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/05/18/crisis-as-a-new-lens-for-digital-ecosystems/
+INFO;2020-05-19 16:42:12,981;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesagencycouncil/2020/05/18/digital-marketing-in-a-cookie-less-internet/
+INFO;2020-05-19 16:42:13,223;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescommunicationscouncil/2020/05/19/four-ways-to-leverage-influencers-in-the-new-digital-landscape/
+INFO;2020-05-19 16:42:13,476;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/carolinamilanesi/2020/05/11/digital-transformation-and-digital-divide-post-covid-19/
+INFO;2020-05-19 16:42:13,721;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/rhettpower/2020/05/17/how-to-embrace-the-digital-age-right-now/
+INFO;2020-05-19 16:42:14,019;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/05/15/social-distancing-means-digital-everything/
+INFO;2020-05-19 16:42:14,330;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/05/13/quarantine-or-a-digital-leap-into-the-future/
+INFO;2020-05-19 16:42:14,583;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/ronshevlin/2020/05/19/visas-plaid-launches-api-exchange-to-accelerate-open-banking-and-digital-transformation/
+INFO;2020-05-19 16:42:14,832;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescommunicationscouncil/2020/05/14/collaborating-chatbots-to-form-a-digital-workforce/
+INFO;2020-05-19 16:42:15,078;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/seansteinsmith/2020/05/19/why-central-bank-digital-currencies-are-good-news-for-blockchain-adoption/
+INFO;2020-05-19 16:42:15,322;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/angelicamarideoliveira/2020/05/15/brazil-makes-inroads-towards-digital-id/
+INFO;2020-05-19 16:42:15,568;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesfinancecouncil/2020/05/11/is-bitcoin-really-digital-gold/
+INFO;2020-05-19 16:42:15,957;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/jasonbrett/2020/05/14/visa-submits-patent-application-for-digital-dollar-using-blockchain/
+INFO;2020-05-19 16:42:16,209;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/theyec/2020/05/14/flexibility-and-digitalization-the-keys-to-a-productive-remote-workforce/
+INFO;2020-05-19 16:42:16,453;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/henrychesbrough/2020/05/14/digital-transformation-and-economic-recovery-from-covid-19/
+INFO;2020-05-19 16:42:16,722;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/05/07/digital-preparedness-in-a-crisis/
+INFO;2020-05-19 17:03:08,620;logger.py;11;=====================================
+INFO;2020-05-19 17:03:08,620;logger.py;12;Srart Scrape of forbes with search-term 'digitalization'
+WARNING;2020-05-19 17:03:10,337;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:10,872;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:11,013;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:11,146;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:11,643;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:12,160;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:12,714;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:13,382;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:13,926;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:14,083;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:14,559;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:14,692;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:15,170;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:15,633;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:16,159;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:16,714;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:17,315;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:17,443;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:17,958;database.py;24;Article already in db
+INFO;2020-05-19 17:03:54,280;logger.py;11;=====================================
+INFO;2020-05-19 17:03:54,281;logger.py;12;Srart Scrape of forbes with search-term 'digitalization'
+WARNING;2020-05-19 17:03:55,836;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:55,971;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:56,110;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:56,248;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:56,380;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:56,878;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:57,006;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:57,141;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:57,643;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:57,774;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:57,915;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:58,061;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:58,215;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:58,723;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:58,854;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:59,026;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:59,617;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:59,746;database.py;24;Article already in db
+WARNING;2020-05-19 17:03:59,888;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:00,163;forbes.py;66;'NoneType' object has no attribute 'find_all'
+WARNING;2020-05-19 17:04:00,164;forbes.py;67;700
+WARNING;2020-05-19 17:04:02,255;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:02,712;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:02,846;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:03,354;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:03,873;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:04,012;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:04,168;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:04,703;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:05,197;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:05,668;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:06,161;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:06,627;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:06,756;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:07,266;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:07,399;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:08,179;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:08,726;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:08,854;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:09,341;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:09,828;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:11,328;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:11,856;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:12,378;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:12,887;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:13,417;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:13,857;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:14,343;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:14,806;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:15,352;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:15,894;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:16,376;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:16,902;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:17,395;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:17,940;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:18,456;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:18,975;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:19,907;database.py;24;Article already in db
+WARNING;2020-05-19 17:04:20,075;database.py;24;Article already in db
+INFO;2020-05-19 17:04:20,562;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/lizengel/2020/04/08/why-the-eu-is-uniting-when-it-comes-to-mobile-apps-and-covid-19/
+INFO;2020-05-19 17:04:21,246;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/esri/2019/11/25/the-rx-for-dx-the-three-stages-of-digital-transformation/
+INFO;2020-05-19 17:04:23,049;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescoachescouncil/2019/12/17/how-to-succeed-as-a-digital-nomad-14-noteworthy-tips-to-consider/
+INFO;2020-05-19 17:04:23,578;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescommunicationscouncil/2019/11/25/b2b-digital-marketing-strategies-that-capture-and-convert/
+INFO;2020-05-19 17:04:24,111;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/12/17/workload-automation-a-small-critical-step-toward-digital-transformation/
+INFO;2020-05-19 17:04:24,620;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/12/26/when-combining-competing-storage-architectures-drives-true-digital-transformation/
+INFO;2020-05-19 17:04:25,067;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/tableauapac/2020/01/03/investing-in-data-culture-to-harness-the-opportunities-presented-by-asia-pacifics-digital-economy/
+INFO;2020-05-19 17:04:25,661;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/williamhaseltine/2019/12/06/as-healthcare-goes-digital-social-care-lags-behind/
+INFO;2020-05-19 17:04:26,111;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2020/01/03/three-factors-traditional-organizations-should-consider-before-implementing-digital-technologies/
+INFO;2020-05-19 17:04:26,554;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/paultalbot/2019/11/24/marketing-metrics-built-to-simplify-digital-campaigns/
+INFO;2020-05-19 17:04:27,108;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2019/12/16/how-to-create-digital-signage-that-enhances-the-offline-shopping-experience/
+INFO;2020-05-19 17:04:27,717;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/cbovaird/2020/04/02/bitcoin-climbs-more-than-15-as-investors-flock-to-safety/
+INFO;2020-05-19 17:04:28,286;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/howardgleckman/2019/12/05/will-trumps-response-to-frances-digital-tax-undercut-the-tcja/
+INFO;2020-05-19 17:04:28,833;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/ryanholmes/2020/04/02/is-covid-19-our-tech-tipping-point/
+INFO;2020-05-19 17:04:29,591;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/bradadgate/2020/03/24/covid-19-will-movie-theaters-fill-up-again/
+INFO;2020-05-19 17:04:30,021;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/quora/2020/03/21/are-we-becoming-too-addicted-to-technology-some-studies-say-no/
+INFO;2020-05-19 17:04:30,626;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesbusinesscouncil/2019/12/04/how-customer-referrals-have-changed-in-the-digital-age/
+INFO;2020-05-19 17:04:31,139;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/lbsbusinessstrategyreview/2019/11/22/digital-disruption--the-power-of-nuance-and-the-dangers-of-extrapolation/
+INFO;2020-05-19 17:04:31,630;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/22/three-considerations-for-realizing-real-digital-transformation/
+INFO;2020-05-19 17:04:32,127;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/stephanieburns/2020/03/18/how-to-have-a-location-independent-business-in-your-40s/
+INFO;2020-05-19 17:04:32,676;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/pamwindsor/2019/12/03/iheartmedia-picks-nashville-for-second-headquarters-for-iheartradio-digital/
+INFO;2020-05-19 17:04:32,819;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/stevenbarr/2019/12/23/when-consumers-say-they-want-a-digital-detox-this-is-what-they-really-mean/
+INFO;2020-05-19 17:04:34,328;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/washingtonbytes/2019/12/03/t-mobile-sprint--the-digital-divide-a-case-for-optimism/
+INFO;2020-05-19 17:04:34,807;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/12/23/digital-transformation-starts-with-the-ceo-its-time-to-say-yes-to-change/
+INFO;2020-05-19 17:04:35,237;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesbusinesscouncil/2019/12/13/which-data-rich-industries-will-thrive-in-the-age-of-digital-transformation/
+INFO;2020-05-19 17:04:35,386;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesagencycouncil/2019/12/13/b2b-digital-marketing-why-social-media-is-only-the-half-of-it/
+INFO;2020-05-19 17:04:35,927;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/10/22/the-digital-imperative-disrupt-or-be-disrupted/
+INFO;2020-05-19 17:04:36,367;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/thomaspellechia/2019/12/02/a-company-that-offers-true-digital-wine-marketing-interruption/
+INFO;2020-05-19 17:04:36,864;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/03/27/how-to-build-a-culture-of-ai-empowerment-for-your-multigenerational-workforce/
+INFO;2020-05-19 17:04:37,448;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/03/27/in-healthcare-its-team-plus-tech/
+INFO;2020-05-19 17:04:37,920;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/natashagural/2020/04/03/escape-the-drudgery-of-quarantine-embark-on-an-emotional-art-adventure-with-stuart-dunkels-everyman-mouse/
+INFO;2020-05-19 17:04:38,429;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/eshachhabra/2019/11/19/building-a-carbon-neutral-digital-prints-company/
+INFO;2020-05-19 17:04:39,013;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/quora/2019/11/19/are-magazines-still-relevant-in-todays-digital-world/
+INFO;2020-05-19 17:04:39,705;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/19/the-new-normal-is-digital-cities-not-smart-cities/
+INFO;2020-05-19 17:04:40,091;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/joemckendrick/2019/12/11/my-one-big-fat-digital-technology-prediction-for-2020/
+INFO;2020-05-19 17:04:40,705;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/jasonbrett/2019/12/11/congress-offers-a-regulatory-20-upgrade-to-cftc-for-digital-commodities/
+INFO;2020-05-19 17:04:41,416;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/greatspeculations/2020/01/06/what-are-the-factors-behind-a-slow-lower-single-digit-growth-in-kimberly-clarks-revenue/
+INFO;2020-05-19 17:04:41,962;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesagencycouncil/2020/01/13/can-digital-and-social-marketing-pros-unplug-from-social-media-without-impacting-their-work/
+INFO;2020-05-19 17:04:42,538;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2019/11/18/managing-investor-expectations-during-a-digital-transformation/
+INFO;2020-05-19 17:04:42,697;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/sap/2019/11/18/digital-cx-optimize-for-the-customer-not-just-costs/
+INFO;2020-05-19 17:04:42,855;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/staceychildress/2020/03/28/65-of-teachers-used-edtech-every-day-in-2019-heres-why-that-matters/
+INFO;2020-05-19 17:04:43,003;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/adamrowe1/2019/11/29/the-10-digit-isbn-is-getting-retired-next-year/
+INFO;2020-05-19 17:11:01,250;logger.py;11;=====================================
+INFO;2020-05-19 17:11:01,251;logger.py;12;Srart Scrape of forbes with search-term 'digitalization'
+WARNING;2020-05-19 17:11:02,735;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:02,866;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:03,007;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:03,151;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:03,674;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:04,206;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:04,744;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:04,886;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:05,337;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:05,818;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:06,329;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:06,829;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:07,502;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:07,985;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:08,421;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:08,899;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:09,136;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:09,661;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:09,795;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:10,338;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:15,214;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:15,346;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:15,480;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:15,618;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:16,075;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:16,619;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:17,092;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:17,819;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:18,251;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:18,763;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:19,310;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:19,440;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:19,911;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:20,422;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:20,907;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:21,399;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:21,975;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:22,421;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:22,906;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:23,443;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:28,313;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:28,832;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:29,210;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:29,792;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:30,222;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:30,707;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:31,157;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:31,288;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:31,768;database.py;24;Article already in db
+WARNING;2020-05-19 17:11:32,257;database.py;24;Article already in db
+INFO;2020-05-19 17:11:32,445;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/greatspeculations/2020/04/08/lockdown-can-help-activision-blizzards-2020-sales-top-7-billion/
+INFO;2020-05-19 17:11:32,676;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/cognitiveworld/2019/12/09/how-an-ai-powered-digital-assistant-increases-productivity-in-business/
+INFO;2020-05-19 17:11:33,166;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/katyafelssmyth/2020/03/31/no-screen-time-a-threat-to-national-security/
+INFO;2020-05-19 17:11:33,684;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/peterhigh/2020/02/03/eli-lillys-first-ever-ciso-turned-cio-has-joined-58b-zoetis-as-chief-information-and-digital-officer/
+INFO;2020-05-19 17:11:34,170;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/stevendennis/2019/12/18/clean-up-on-aisle-3-walmarts-digital-dreams-take-a-markdown/
+INFO;2020-05-19 17:11:34,319;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescommunicationscouncil/2020/03/24/five-tips-for-crafting-an-effective-spotify-playlist-pitch/
+INFO;2020-05-19 17:11:34,769;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/adamrowe1/2020/03/28/ebook-app-readership-is-up-30-amid-pandemic-lockdowns/
+INFO;2020-05-19 17:11:34,911;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/afdhelaziz/2020/04/04/the-power-of-purpose-talkspace-donates-over-one-hundred-years-of-free-therapy-to-medical-workers/
+INFO;2020-05-19 17:11:35,447;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesfinancecouncil/2019/10/31/how-to-sell-insurance-in-the-digital-age/
+INFO;2020-05-19 17:11:35,865;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/sap/2019/11/14/how-to-revive-the-mall-experience-for-the-digital-generation/
+INFO;2020-05-19 17:11:40,686;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/vinnielauria/2019/12/17/how-digital-neobanks-can-win-in-southeast-asia-and-eventually-everywhere/
+INFO;2020-05-19 17:11:41,229;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/quora/2020/03/22/how-much-should-you-actually-be-monitoring-your-kids-online/
+INFO;2020-05-19 17:11:41,380;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/quora/2020/03/23/how-will-technology-continue-to-impact-our-everyday-lives/
+INFO;2020-05-19 17:11:41,878;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/hanktucker/2020/03/23/these-funds-have-shielded-some-cautious-investors-from-the-coronavirus-selloff/
+INFO;2020-05-19 17:11:42,379;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/jeffkart/2020/03/17/earth-day-2020-will-survive-the-coronavirus/
+INFO;2020-05-19 17:11:42,522;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/donnafuscaldo/2019/12/05/digital-bank-chime-now-has-a-valuation-of-58-billion/
+INFO;2020-05-19 17:11:43,025;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/dawnchmielewski/2020/01/21/fifa-womens-world-cup-world-series-help-fox-sports-deliver-massive-digital-audience-in-2019/
+INFO;2020-05-19 17:11:43,805;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/greatspeculations/2019/12/24/why-booking-holdings-agency-revenue-will-see-single-digit-growth-in-2019/
+INFO;2020-05-19 17:11:44,351;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/taxnotes/2019/11/11/interview-taxing-the-digital-economy-and-developing-countries/
+INFO;2020-05-19 17:11:44,843;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/cbovaird/2019/11/11/who-will-win-the-race-for-digital-currency-supremacy/
+INFO;2020-05-19 17:11:45,411;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/stephanieburns/2019/10/11/antique-values-in-the-digital-age/
+INFO;2020-05-19 17:11:45,946;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/hughmcintyre/2020/03/24/bts-member-v-scores-the-second-highest-charting-song-among-solo-korean-musicians-on-the-sales-chart/
+INFO;2020-05-19 17:11:46,479;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/dalebuss/2020/12/30/as-car-auctioning-goes-digital-new-kar-global-hq-lures-tech-workers/
+INFO;2020-05-19 17:11:47,024;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/michaellore/2019/12/03/ticketmasters-new-digital-technology-eliminating-ticket-fraud-in-the-nfl/
+INFO;2020-05-19 17:11:47,527;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/12/03/adtech-in-the-age-of-digital-cannabis-accessing-the-next-frontier-of-consumers/
+INFO;2020-05-19 17:11:48,192;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/jimvinoski/2020/03/10/overhauls-175-million-growth-investment-will-help-them-cure-your-supply-chains-coronavirus-symptoms/
+INFO;2020-05-19 17:11:48,609;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/cartercoudriet/2020/03/13/coronavirus-forces-124th-boston-marathon-to-postpone/
+INFO;2020-05-19 17:11:49,144;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescommunicationscouncil/2019/11/08/overcoming-the-challenges-of-building-an-in-house-digital-agency/
+INFO;2020-05-19 17:11:49,618;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesfinancecouncil/2020/03/16/three-signs-its-time-to-switch-to-mobile-banking/
+INFO;2020-05-19 17:11:50,088;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/joanverdon/2019/12/21/what-if-a-toy-catalog-could-talk-walmarts-videos-could-be-digital-disrupters/
+INFO;2020-05-19 17:11:54,331;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/richkarlgaard/2019/11/07/digital-advancement-is-the-key-to-chinas-continuing-rise/
+INFO;2020-05-19 17:11:54,887;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/paultalbot/2019/11/20/digital-audio-measurement-tries-to-take-a-step-forward/
+INFO;2020-05-19 17:11:55,033;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/hughmcintyre/2020/03/11/lil-baby-charts-14-songs-on-the-hot-100-simultaneously/
+INFO;2020-05-19 17:11:55,528;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/jilliandonfro/2020/01/05/buzzfeed-jonah-peretti-google-digital-middleman/
+INFO;2020-05-19 17:11:56,148;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/angelicakrystledonati/2020/03/28/this-is-what-real-estate-and-proptech-should-be-doing-to-protect-your-data/
+INFO;2020-05-19 17:11:56,749;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/03/04/news-flash-youre-running-a-technology-organization/
+INFO;2020-05-19 17:11:57,206;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/12/20/when-digital-transformation-stalls-heres-what-you-can-do-about-it/
+INFO;2020-05-19 17:11:57,676;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/laurenorsini/2020/03/24/how-hand-drawn-and-cg-animation-come-together-in-chihayafuru/
+INFO;2020-05-19 17:11:58,175;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/tonybradley/2019/12/10/2019-has-been-a-very-good-year-for-ironclad-and-digital-contracting/
+INFO;2020-05-19 17:11:58,602;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/joemckendrick/2019/12/10/prototype-pivot-and-pitch-three-basic-steps-to-digital-critical-mass/
+INFO;2020-05-19 17:11:59,092;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/09/16/digital-transformation-and-the-ciso/
+INFO;2020-05-19 17:11:59,542;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/googlecloud/2019/10/22/microservices-the-machine-tools-of-the-digital-revolution/
+INFO;2020-05-19 17:12:00,168;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/gabrielshaoolian/2019/12/19/how-to-hire-a-qualified-digital-marketing-expert-4-questions-to-ask-candidates/
+INFO;2020-05-19 17:12:00,649;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/bobzukis/2019/11/18/getting-to-a-win-win-win-in-digital-boardroom-leadership/
+INFO;2020-05-19 17:12:01,263;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/taxnotes/2019/11/18/interview-analyzing-the-oecds-plan-for-taxing-the-digital-economy/
+INFO;2020-05-19 17:12:01,779;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/leannekemp/2020/03/16/how-can-e-provenance-transform-supply-chains-into-value-chains/
+WARNING;2020-05-19 17:12:02,068;forbes.py;67;'NoneType' object has no attribute 'find_all'
+WARNING;2020-05-19 17:12:02,068;forbes.py;68;830
+INFO;2020-05-19 17:12:02,609;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/10/21/how-to-protect-your-digital-twin/
+INFO;2020-05-19 17:12:02,760;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/shlomosprung/2020/01/10/spencer-dinwiddie-launching-digital-token-next-week-discusses-nbas-threat-to-terminate-his-contract/
+INFO;2020-05-19 17:12:03,385;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/theyec/2019/12/09/going-cashless-10-things-to-know-about-the-evolution-of-digital-payments/
+INFO;2020-05-19 17:12:08,144;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesfinancecouncil/2020/03/16/four-accounting-trends-to-watch/
+INFO;2020-05-19 17:12:08,716;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/04/how-to-have-a-personal-touch-in-a-digital-ecosystem/
+INFO;2020-05-19 17:12:09,350;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/marksparrow/2019/11/04/seasonal-gifts-for-the-digital-nomad-in-your-life/
+INFO;2020-05-19 17:12:09,543;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/paultalbot/2020/03/14/inside-targets-marketing-strategy/
+INFO;2020-05-19 17:12:10,040;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/scottkramer/2019/10/02/a-smarter-digital-photo-frame/
+INFO;2020-05-19 17:12:10,617;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/angelicamarideoliveira/2020/03/27/the-brazil-tech-and-innovation-round-up-15-minute-tests-nubank-announces-client-support-fund-coronavirus-threatens-brazils-gdpr/
+WARNING;2020-05-19 17:12:10,988;forbes.py;67;'NoneType' object has no attribute 'find_all'
+WARNING;2020-05-19 17:12:10,988;forbes.py;68;850
+INFO;2020-05-19 17:12:11,428;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesbusinesscouncil/2019/11/15/how-startups-can-roadmap-and-drive-digital-growth/
+INFO;2020-05-19 17:12:11,964;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/03/26/why-coding-is-the-social-equalizer/
+INFO;2020-05-19 17:12:12,462;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/tjmccue/2019/12/24/apple-gift-card-deal-amazon-last-minute-christmas-eve-digital-deals/
+WARNING;2020-05-19 17:12:12,703;forbes.py;67;'NoneType' object has no attribute 'find_all'
+WARNING;2020-05-19 17:12:12,703;forbes.py;68;850
+INFO;2020-05-19 17:12:12,853;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/charlestowersclark/2020/03/27/will-remote-work-become-the-new-normal/
+WARNING;2020-05-19 17:12:13,375;database.py;24;Article already in db
+WARNING;2020-05-19 17:12:13,804;database.py;24;Article already in db
+INFO;2020-05-19 17:12:14,314;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/michalgromek/2019/10/31/digital-investment-fraud-wave-hits-seniors/
+INFO;2020-05-19 17:12:14,906;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/lawrencewintermeyer/2019/11/13/the-digital-financial-services-regulator-with-the-fcas-nick-cook/
+WARNING;2020-05-19 17:12:15,102;database.py;24;Article already in db
+INFO;2020-05-19 17:12:15,593;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/loreleimarfil/2019/12/05/how-eyewear-company-marcolin-group-is-focusing-on-innovation-and-digital-reinvention/
+WARNING;2020-05-19 17:12:16,389;database.py;24;Article already in db
+WARNING;2020-05-19 17:12:16,958;database.py;24;Article already in db
+INFO;2020-05-19 17:12:21,608;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/martinrivers/2019/11/24/this-digital-startup-is-stamping-out-the-tax-free-shopping-scam/
+INFO;2020-05-19 17:12:22,158;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/roytelmontero/2020/03/27/here-are-some-drag-shows--taking-their-acts-online-amidst-social-distancing/
+INFO;2020-05-19 17:12:22,667;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/michaelmillenson/2019/11/23/concrete-problems-experts-caution-on-construction-of-digital-health-superhighway/
+INFO;2020-05-19 17:12:23,112;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forrester/2019/12/03/predictions-2020-european-consumers-regulators-and-digital-china-seize-the-initiative/
+WARNING;2020-05-19 17:12:23,246;database.py;24;Article already in db
+INFO;2020-05-19 17:12:23,732;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/tomdavenport/2019/10/28/the-future-of-work-is-nowdigital-life-underwriter-at-haven-life/
+INFO;2020-05-19 17:12:24,317;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesagencycouncil/2020/03/10/seo-for-beginners-why-a-plan-and-consistency-are-key-to-success/
+INFO;2020-05-19 17:12:24,777;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/quora/2020/03/22/how-to-fine-tune-your-technology-habits/
+INFO;2020-05-19 17:12:25,239;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/investor/2020/03/23/the-coronavirus-crisis-and-e-trading-tax-exempt-short-paper-is-the-platform-working/
+INFO;2020-05-19 17:12:25,693;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/greglicholai/2019/12/02/digital-health-trial-uses-ai-for-better-epilepsy-treatment-decisions/
+INFO;2020-05-19 17:12:25,837;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/biancabarratt/2020/01/10/job-security-is-a-myth-one-digital-business-woman-shares-the-real-secret-to-safeguarding-your-future-in-2020/
+INFO;2020-05-19 17:12:26,372;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/pamdanziger/2020/01/16/why-digitally-native-menswear-fashion-brand-mizzenmain-made-wholesale-retail-part-of-its-distribution-strategy/
+INFO;2020-05-19 17:12:26,826;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/bernhardschroeder/2019/12/19/digital-nomads-are-here-to-stay-eight-tips-on-how-to-select-and-mange-them-effectively/
+INFO;2020-05-19 17:12:27,287;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/08/four-things-to-consider-on-your-digital-transformation-journey/
+INFO;2020-05-19 17:12:27,804;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/08/why-digital-twins-and-customer-service-are-a-perfect-pair/
+INFO;2020-05-19 17:12:28,263;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/adrianbridgwater/2019/10/25/the-journey-from-paper-to-digital-process-intelligence/
+INFO;2020-05-19 17:12:28,697;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/johnkoetsier/2019/11/30/record-black-friday-sales-14-growth-to-72b-in-digital-revenue/
+INFO;2020-05-19 17:12:29,255;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/emilyjoffrion/2020/03/20/make-the-most-of-quarantine-here-are-18-ways-to-beat-coronavirus-isolation/
+INFO;2020-05-19 17:12:29,808;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/sap/2019/11/07/how-this-university-boosted-its-appeal-to-digital-natives/
+INFO;2020-05-19 17:12:30,310;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescommunicationscouncil/2019/11/19/is-digital-dying-why-marketers-need-to-make-a-strategic-shift/
+INFO;2020-05-19 17:12:35,476;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/greatspeculations/2019/12/09/why-netflixs-domestic-streaming-revenue-will-see-single-digit-growth-in-2020/
+INFO;2020-05-19 17:12:35,977;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/bradadgate/2020/03/08/next-gen-tv-coming-to-your-living-room-and-phones--cars-soon/
+INFO;2020-05-19 17:12:36,471;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/solrogers/2019/10/08/should-brands-invest-in-xr-advertising/
+INFO;2020-05-19 17:12:36,914;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/greatspeculations/2019/11/18/activision-blizzards-revenue-to-see-double-digit-decline-in-2019/
+INFO;2020-05-19 17:12:37,381;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/theyec/2019/11/06/how-to-protect-your-digital-assets-with-drip-content/
+INFO;2020-05-19 17:12:37,889;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/kennethcorbin/2019/10/23/facebooks-zuckerberg-defends-digital-currency-plans/
+INFO;2020-05-19 17:12:38,356;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/10/07/verification-and-trust-in-the-digital-sales-platform/
+INFO;2020-05-19 17:12:38,499;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/bernardmarr/2020/03/23/covid-19-is-changing-our-world--as-well-as-our-attitude-to-technology-and-privacy-why-could-that-be-a-problem/
+INFO;2020-05-19 17:12:38,983;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/abrambrown/2020/03/15/the-coronavirus-has-brought-the-dawn-of-the-virtual-happy-hour/
+INFO;2020-05-19 17:12:39,127;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/04/three-necessities-for-maximizing-your-digital-twins-approach/
+INFO;2020-05-19 17:12:39,744;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/billybambrough/2020/03/21/blow-to-bitcoin-as-russia-moves-to-effectively-ban-crypto/
+INFO;2020-05-19 17:12:40,248;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/giovannirodriguez/2020/03/05/how-does-one-ask-a-restaurant-if-it-pays-workers-for-sick-time/
+INFO;2020-05-19 17:12:40,715;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/03/16/blockchain-and-the-future-of-erp-part-2-fido-devices-as-a-lightweight-alternative-to-blockchain/
+INFO;2020-05-19 17:12:41,200;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/03/13/cloud-technology-tools-dont-replace-your-strongest-master-builders/
+INFO;2020-05-19 17:12:41,702;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesagencycouncil/2019/12/05/three-tips-for-using-ott-advertising-as-part-of-your-digital-marketing-strategy/
+INFO;2020-05-19 17:12:42,144;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbescommunicationscouncil/2019/11/25/the-road-to-digital-transformation-who-are-you-and-what-do-you-have/
+INFO;2020-05-19 17:12:42,639;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/01/why-your-enterprise-keeps-failing-at-digital-transformation/
+INFO;2020-05-19 17:12:43,140;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesfinancecouncil/2019/10/02/navigating-digital-disruption-in-restaurants-and-retail/
+INFO;2020-05-19 17:12:43,650;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesrealestatecouncil/2019/11/13/the-future-of-real-estate-investing-digital-assets-are-here-now/
+INFO;2020-05-19 17:12:44,317;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/adamrowe1/2019/11/24/one-app-is-helping-thousands-of-book-clubs-organize-in-the-digital-age/
+INFO;2020-05-19 17:12:48,939;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/michaelfoster/2020/03/06/a-tax-free-4-dividend-perfect-for-this-selloff/
+INFO;2020-05-19 17:12:49,393;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/janelevere/2019/12/28/60th-anniversary-reissue-of-original-broadway-cast-recording-of-the-sound-of-music-released-digitally-on-cd-and-vinyl/
+INFO;2020-05-19 17:12:49,899;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/elainepofeldt/2019/12/28/these-digital-nomads-ditched-stressful-careers-in-new-york-and-started-a-business-they-run-from-bali/
+INFO;2020-05-19 17:12:50,358;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/hughmcintyre/2020/03/12/bad-bunny-owns-more-than-10-of-the-hot-100-this-week/
+INFO;2020-05-19 17:12:50,885;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2020/03/09/wearing-it-well-the-next-steps-for-wearable-medical-technology/
+INFO;2020-05-19 17:12:51,367;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/10/31/enable-engage-and-accelerate-the-required-fuel-for-digital-transformation/
+INFO;2020-05-19 17:12:51,992;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/12/a-blockchain-based-digital-notary-what-you-need-to-know/
+INFO;2020-05-19 17:12:52,462;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/martyswant/2019/12/03/unilever-promotes-veteran-marketer-conny-braams-to-chief-digital-and-marketing-officer/
+INFO;2020-05-19 17:12:52,936;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesagencycouncil/2020/02/18/programmatic-advertising-for-medical-marketing/
+INFO;2020-05-19 17:12:53,078;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/tomgroenfeldt/2019/12/20/digital-banking-have-you-befuddled-chris-skinners-latest-book-has-practical-plans/
+INFO;2020-05-19 17:12:53,609;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/10/16/digital-transformation-top-down-or-bottom-up/
+INFO;2020-05-19 17:12:54,091;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/lucysherriff/2019/09/11/digitalizing-the-care-home-sector/
+INFO;2020-05-19 17:12:54,789;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/laurabegleybloom/2020/03/05/personal-branding-travel/
+INFO;2020-05-19 17:12:55,337;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/cognitiveworld/2019/10/29/digital-models-from-scans-assisting-with-industrial-security/
+WARNING;2020-05-19 17:12:55,626;forbes.py;67;'NoneType' object has no attribute 'find_all'
+WARNING;2020-05-19 17:12:55,627;forbes.py;68;910
+INFO;2020-05-19 17:12:56,080;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesagencycouncil/2020/03/11/three-cases-when-hotel-marketers-might-want-to-consider-otas/
+INFO;2020-05-19 17:12:56,629;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/meghanmccormick/2019/10/14/can-the-digital-banking-fantasy-become-a-reality/
+INFO;2020-05-19 17:12:57,133;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/marcberman1/2020/02/21/the-one-with-the-reunion-on-hbo-max/
+INFO;2020-05-19 17:12:57,655;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/11/21/planning-to-go-digital-12-steps-businesses-should-take-first/
+INFO;2020-05-19 17:13:01,955;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/remyblumenfeld/2019/10/28/how-to-bridge-the-digital-divide-one-person-at-a-time/
+INFO;2020-05-19 17:13:02,155;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/billybambrough/2020/03/17/bitcoins-time-is-now-dont-miss-it/
+INFO;2020-05-19 17:13:02,752;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/brentdykes/2020/03/25/reporting-apis-how-to-make-them-better-stronger-faster/
+INFO;2020-05-19 17:13:03,269;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/marcoannunziata/2020/03/17/reinventing-mobility-and-manufacturing-at-once-local-motors/
+INFO;2020-05-19 17:13:03,955;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/trevorclawson/2020/03/17/achieving-maturityhas-uk-tech-solved-its-valley-of-death-problem/
+INFO;2020-05-19 17:13:04,449;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/kenrapoza/2020/03/10/see-how-shanghai-hong-kong-hotel-traffic-has-collapsed-due-to-coronavirus/
+INFO;2020-05-19 17:13:04,949;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/scottmendelson/2020/03/17/harley-quinn-birds-of-prey-from-box-office-bomb-to-vod-game-changer/
+INFO;2020-05-19 17:13:05,097;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbesinsights/2019/09/26/the-secret-to-digital-transformation-in-one-chart/
+INFO;2020-05-19 17:13:05,644;database.py;30;Article succsessfully stored, URL:https://www.forbes.com/sites/forbestechcouncil/2019/09/26/the-reason-most-digital-transformations-fail/

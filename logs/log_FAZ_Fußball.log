@@ -1,0 +1,291 @@
+INFO;2020-03-12 14:29:05,957;logger.py;11;=====================================
+INFO;2020-03-12 14:29:05,957;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:29:08,373;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:29:08,373;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:29:08,892;webscraper_FAZ.py;61;0 found on page
+INFO;2020-03-12 14:30:28,659;logger.py;11;=====================================
+INFO;2020-03-12 14:30:28,659;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:30:29,187;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:30:29,187;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:30:29,728;webscraper_FAZ.py;61;0 found on page
+CRITICAL;2020-03-12 14:30:29,728;webscraper_FAZ.py;64;!!!!! Scrape Stopped because resources were exeeded !!!!!!
+INFO;2020-03-12 14:30:53,860;logger.py;11;=====================================
+INFO;2020-03-12 14:30:53,861;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:30:54,473;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:30:54,473;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:30:55,151;webscraper_FAZ.py;61;0 found on page
+CRITICAL;2020-03-12 14:30:55,151;webscraper_FAZ.py;64;!!!!! Scrape Stopped because resources were exeeded !!!!!!
+INFO;2020-03-12 14:31:42,070;logger.py;11;=====================================
+INFO;2020-03-12 14:31:42,070;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:31:45,344;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:31:45,344;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:31:45,795;webscraper_FAZ.py;60;0 found on page
+CRITICAL;2020-03-12 14:31:45,795;webscraper_FAZ.py;63;!!!!! Scrape Stopped because resources were exeeded !!!!!!
+INFO;2020-03-12 14:33:11,346;logger.py;11;=====================================
+INFO;2020-03-12 14:33:11,347;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:33:12,347;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:33:12,347;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:33:12,931;webscraper_FAZ.py;60;0 found on page
+CRITICAL;2020-03-12 14:33:12,931;webscraper_FAZ.py;63;!!!!! Scrape Stopped because resources were exeeded !!!!!!
+INFO;2020-03-12 14:34:40,249;logger.py;11;=====================================
+INFO;2020-03-12 14:34:40,250;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:34:42,543;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:34:42,544;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:34:43,070;webscraper_FAZ.py;60;81 found on page
+WARNING;2020-03-12 14:34:43,071;webscraper_FAZ.py;33;info could not be scraped
+WARNING;2020-03-12 14:34:43,071;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:43,071;webscraper_FAZ.py;100;Headline: Der rasante Niedergang des FC Ingolstadt
+CRITICAL;2020-03-12 14:34:43,071;webscraper_FAZ.py;113;Article Page could not be loaded and therefore could not be scraped
+INFO;2020-03-12 14:34:43,075;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/europa-league-eintracht-frankfurt-gegen-basel-ohne-hilfe-der-fans-16675175.html
+INFO;2020-03-12 14:34:43,490;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:43,491;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:43,491;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-la-liga-setzt-aus-und-real-madrid-in-quarantaene-16675834.html
+INFO;2020-03-12 14:34:43,943;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:43,944;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:43,944;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/wegen-coronavirus-dfb-sieht-gefahr-eines-saisonabbruchs-16675786.html
+INFO;2020-03-12 14:34:44,379;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:44,382;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:44,382;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/coronavirus-kickers-offenbach-muss-ohne-zuschauer-antreten-16675770.html
+INFO;2020-03-12 14:34:44,994;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:44,995;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:44,999;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-sky-zeigt-bundesliga-konferenzen-frei-empfangbar-16675546.html
+INFO;2020-03-12 14:34:45,466;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:45,467;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-axel-hellmann-ueber-coronavirus-und-basel-spiel-16675196.html
+INFO;2020-03-12 14:34:45,976;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:45,977;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/champions-league/juergen-klopp-scheidet-mit-liverpool-gegen-atletico-in-cl-aus-16675317.html
+INFO;2020-03-12 14:34:46,456;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:46,457;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:46,457;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/mehr-sport/coronavirus-nba-unterbricht-basketball-saison-16675332.html
+INFO;2020-03-12 14:34:46,974;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:46,974;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:46,975;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/inter-mailand-beendet-wegen-coronavirus-fussball-spielbetrieb-16675308.html
+INFO;2020-03-12 14:34:47,388;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:47,389;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-gladbach-besiegt-koeln-im-rheinderby-ohne-fans-16574280.html
+INFO;2020-03-12 14:34:47,940;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:47,941;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/formel-1/formel-1-grand-prix-in-australien-soll-trotz-coronavirus-starten-16674069.html
+INFO;2020-03-12 14:34:48,504;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:48,505;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/coronavirus-shutdown-auf-oesterreichisch-16674495.html
+INFO;2020-03-12 14:34:48,967;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:48,967;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:48,968;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/ex-dfb-praesident-wolfgang-niersbach-bei-prozess-um-wm-2006-16674716.html
+INFO;2020-03-12 14:34:49,447;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:49,448;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:49,448;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-dfb-verlegt-zwei-drittliga-spieltage-16674172.html
+INFO;2020-03-12 14:34:49,987;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:49,988;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:49,988;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/bayern-spiel-bei-union-berlin-nun-doch-ohne-zuschauer-16673650.html
+INFO;2020-03-12 14:34:50,536;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:50,537;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:50,537;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/frankfurts-dezernent-fordert-regeln-fuer-umgang-mit-corona-16674152.html
+INFO;2020-03-12 14:34:51,358;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:51,358;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:51,359;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-timo-huebers-von-hannover-96-positiv-getestet-16673974.html
+INFO;2020-03-12 14:34:51,829;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:51,830;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:51,830;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/geisterspiele-wegen-corona-was-fans-jetzt-tun-koennen-16673884.html
+WARNING;2020-03-12 14:34:52,345;database.py;16;Article already in db
+WARNING;2020-03-12 14:34:52,346;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:52,347;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/roger-schmidt-trainiert-kuenftig-psv-eindhoven-16673810.html
+INFO;2020-03-12 14:34:53,280;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:53,281;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/coronavirus-eintracht-frankfurt-in-bundesliga-ohne-zuschauer-16673721.html
+INFO;2020-03-12 14:34:54,222;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:54,223;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/f-a-z-newsletter-kicken-und-haendeschuetteln-in-zeiten-des-virus-16673439.html
+WARNING;2020-03-12 14:34:55,108;database.py;16;Article already in db
+INFO;2020-03-12 14:34:55,109;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/champions-league/leipzig-gegen-tottenham-erstmals-ins-viertelfinale-der-champions-league-16670932.html
+INFO;2020-03-12 14:34:55,576;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:55,577;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/zuschauerausschluss-in-bundesliga-bringt-geisterstunde-im-deutschen-fussball-16673085.html
+INFO;2020-03-12 14:34:57,177;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:34:57,178;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/wirtschaft/unternehmen/corona-geisterspiele-bundesliga-droht-140-millionen-euro-verlust-16672806.html
+WARNING;2020-03-12 14:34:57,720;database.py;16;Article already in db
+INFO;2020-03-12 14:34:57,721;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/mainz-05-muss-auf-torhueter-robin-zentner-verzichten-16672769.html
+INFO;2020-03-12 14:34:58,749;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:58,749;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:58,750;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-bundesliga-derby-gladbach-gegen-koeln-ohne-fans-16672151.html
+INFO;2020-03-12 14:34:59,750;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:34:59,751;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:34:59,751;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-so-teuer-werden-geisterspiele-fuer-die-bundesligaklubs-16672486.html
+WARNING;2020-03-12 14:35:00,331;database.py;16;Article already in db
+INFO;2020-03-12 14:35:00,332;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/bundesliga-heiko-herrlich-uebernimmt-den-fc-augsburg-16672143.html
+INFO;2020-03-12 14:35:01,790;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:35:01,791;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:35:01,791;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/anwalt-von-theo-zwanziger-kritisiert-in-wm-2006-affaere-gericht-16672542.html
+INFO;2020-03-12 14:35:02,881;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:35:02,883;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/coronavirus-ganz-italien-ist-ein-sperrgebiet-16672147.html
+INFO;2020-03-12 14:35:03,462;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:35:03,463;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/politik/ausland/coronavirus-hohe-zahl-der-infektionen-in-der-schweiz-16670930.html
+WARNING;2020-03-12 14:35:03,949;database.py;16;Article already in db
+CRITICAL;2020-03-12 14:35:03,949;webscraper_FAZ.py;69;!!!!! Scrape Stopped because no new articles were found !!!!!!
+INFO;2020-03-12 14:36:36,428;logger.py;11;=====================================
+INFO;2020-03-12 14:36:36,428;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:36:36,830;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:36:36,830;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:36:37,259;webscraper_FAZ.py;60;81 found on page
+WARNING;2020-03-12 14:36:37,260;webscraper_FAZ.py;33;info could not be scraped
+WARNING;2020-03-12 14:36:37,260;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:37,260;webscraper_FAZ.py;100;Headline: Der rasante Niedergang des FC Ingolstadt
+CRITICAL;2020-03-12 14:36:37,260;webscraper_FAZ.py;113;Article Page could not be loaded and therefore could not be scraped
+INFO;2020-03-12 14:36:37,265;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/europa-league-eintracht-frankfurt-gegen-basel-ohne-hilfe-der-fans-16675175.html
+WARNING;2020-03-12 14:36:37,657;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:37,658;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:37,658;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-la-liga-setzt-aus-und-real-madrid-in-quarantaene-16675834.html
+WARNING;2020-03-12 14:36:38,060;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:38,061;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:38,061;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/wegen-coronavirus-dfb-sieht-gefahr-eines-saisonabbruchs-16675786.html
+WARNING;2020-03-12 14:36:38,433;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:38,434;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:38,434;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/coronavirus-kickers-offenbach-muss-ohne-zuschauer-antreten-16675770.html
+WARNING;2020-03-12 14:36:38,799;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:38,800;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:38,800;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-sky-zeigt-bundesliga-konferenzen-frei-empfangbar-16675546.html
+WARNING;2020-03-12 14:36:39,197;database.py;16;Article already in db
+INFO;2020-03-12 14:36:39,198;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-axel-hellmann-ueber-coronavirus-und-basel-spiel-16675196.html
+WARNING;2020-03-12 14:36:39,608;database.py;16;Article already in db
+INFO;2020-03-12 14:36:39,609;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/champions-league/juergen-klopp-scheidet-mit-liverpool-gegen-atletico-in-cl-aus-16675317.html
+WARNING;2020-03-12 14:36:39,998;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:39,998;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:39,999;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/mehr-sport/coronavirus-nba-unterbricht-basketball-saison-16675332.html
+WARNING;2020-03-12 14:36:40,377;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:40,378;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:40,378;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/inter-mailand-beendet-wegen-coronavirus-fussball-spielbetrieb-16675308.html
+WARNING;2020-03-12 14:36:40,765;database.py;16;Article already in db
+INFO;2020-03-12 14:36:40,766;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-gladbach-besiegt-koeln-im-rheinderby-ohne-fans-16574280.html
+WARNING;2020-03-12 14:36:41,149;database.py;16;Article already in db
+INFO;2020-03-12 14:36:41,150;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/formel-1/formel-1-grand-prix-in-australien-soll-trotz-coronavirus-starten-16674069.html
+WARNING;2020-03-12 14:36:41,558;database.py;16;Article already in db
+INFO;2020-03-12 14:36:41,558;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/coronavirus-shutdown-auf-oesterreichisch-16674495.html
+WARNING;2020-03-12 14:36:41,950;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:41,951;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:41,951;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/ex-dfb-praesident-wolfgang-niersbach-bei-prozess-um-wm-2006-16674716.html
+WARNING;2020-03-12 14:36:42,464;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:42,464;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:42,465;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-dfb-verlegt-zwei-drittliga-spieltage-16674172.html
+WARNING;2020-03-12 14:36:42,885;database.py;16;Article already in db
+WARNING;2020-03-12 14:36:42,886;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:36:42,886;webscraper_FAZ.py;106;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/bayern-spiel-bei-union-berlin-nun-doch-ohne-zuschauer-16673650.html
+WARNING;2020-03-12 14:36:44,288;database.py;16;Article already in db
+CRITICAL;2020-03-12 14:36:44,288;webscraper_FAZ.py;69;!!!!! Scrape Stopped because no new articles were found !!!!!!
+INFO;2020-03-12 14:37:08,131;logger.py;11;=====================================
+INFO;2020-03-12 14:37:08,131;logger.py;12;Srart Scrape of FAZ with search-term 'Fußball'
+INFO;2020-03-12 14:37:08,523;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 14:37:08,523;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Fußball&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 14:37:09,551;webscraper_FAZ.py;60;81 found on page
+WARNING;2020-03-12 14:37:09,553;webscraper_FAZ.py;33;info could not be scraped
+WARNING;2020-03-12 14:37:09,553;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:09,553;webscraper_FAZ.py;101;Headline: Der rasante Niedergang des FC Ingolstadt
+CRITICAL;2020-03-12 14:37:09,553;webscraper_FAZ.py;114;Article Page could not be loaded and therefore could not be scraped
+INFO;2020-03-12 14:37:09,556;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/europa-league-eintracht-frankfurt-gegen-basel-ohne-hilfe-der-fans-16675175.html
+WARNING;2020-03-12 14:37:09,995;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:09,995;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:09,996;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-la-liga-setzt-aus-und-real-madrid-in-quarantaene-16675834.html
+WARNING;2020-03-12 14:37:10,467;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:10,467;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:10,468;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/wegen-coronavirus-dfb-sieht-gefahr-eines-saisonabbruchs-16675786.html
+WARNING;2020-03-12 14:37:10,853;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:10,854;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:10,854;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/coronavirus-kickers-offenbach-muss-ohne-zuschauer-antreten-16675770.html
+WARNING;2020-03-12 14:37:11,233;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:11,234;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:11,234;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-sky-zeigt-bundesliga-konferenzen-frei-empfangbar-16675546.html
+WARNING;2020-03-12 14:37:11,834;database.py;16;Article already in db
+INFO;2020-03-12 14:37:11,835;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-axel-hellmann-ueber-coronavirus-und-basel-spiel-16675196.html
+WARNING;2020-03-12 14:37:12,330;database.py;16;Article already in db
+INFO;2020-03-12 14:37:12,331;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/champions-league/juergen-klopp-scheidet-mit-liverpool-gegen-atletico-in-cl-aus-16675317.html
+WARNING;2020-03-12 14:37:12,774;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:12,774;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:12,774;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/mehr-sport/coronavirus-nba-unterbricht-basketball-saison-16675332.html
+WARNING;2020-03-12 14:37:13,196;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:13,197;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:13,197;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/inter-mailand-beendet-wegen-coronavirus-fussball-spielbetrieb-16675308.html
+WARNING;2020-03-12 14:37:13,648;database.py;16;Article already in db
+INFO;2020-03-12 14:37:13,649;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-gladbach-besiegt-koeln-im-rheinderby-ohne-fans-16574280.html
+WARNING;2020-03-12 14:37:14,045;database.py;16;Article already in db
+INFO;2020-03-12 14:37:14,046;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/formel-1/formel-1-grand-prix-in-australien-soll-trotz-coronavirus-starten-16674069.html
+WARNING;2020-03-12 14:37:14,530;database.py;16;Article already in db
+INFO;2020-03-12 14:37:14,531;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/coronavirus-shutdown-auf-oesterreichisch-16674495.html
+WARNING;2020-03-12 14:37:14,944;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:14,945;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:14,945;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/ex-dfb-praesident-wolfgang-niersbach-bei-prozess-um-wm-2006-16674716.html
+WARNING;2020-03-12 14:37:15,537;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:15,538;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:15,538;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-dfb-verlegt-zwei-drittliga-spieltage-16674172.html
+WARNING;2020-03-12 14:37:15,967;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:15,969;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:15,969;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/bayern-spiel-bei-union-berlin-nun-doch-ohne-zuschauer-16673650.html
+WARNING;2020-03-12 14:37:16,379;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:16,379;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:16,380;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/frankfurts-dezernent-fordert-regeln-fuer-umgang-mit-corona-16674152.html
+WARNING;2020-03-12 14:37:16,930;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:16,930;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:16,931;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/coronavirus-timo-huebers-von-hannover-96-positiv-getestet-16673974.html
+WARNING;2020-03-12 14:37:17,468;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:17,469;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:17,469;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/geisterspiele-wegen-corona-was-fans-jetzt-tun-koennen-16673884.html
+WARNING;2020-03-12 14:37:18,041;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:18,041;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:18,042;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/roger-schmidt-trainiert-kuenftig-psv-eindhoven-16673810.html
+WARNING;2020-03-12 14:37:18,506;database.py;16;Article already in db
+INFO;2020-03-12 14:37:18,507;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/coronavirus-eintracht-frankfurt-in-bundesliga-ohne-zuschauer-16673721.html
+WARNING;2020-03-12 14:37:19,070;database.py;16;Article already in db
+INFO;2020-03-12 14:37:19,071;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/f-a-z-newsletter-kicken-und-haendeschuetteln-in-zeiten-des-virus-16673439.html
+WARNING;2020-03-12 14:37:20,712;database.py;16;Article already in db
+INFO;2020-03-12 14:37:20,713;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/champions-league/leipzig-gegen-tottenham-erstmals-ins-viertelfinale-der-champions-league-16670932.html
+WARNING;2020-03-12 14:37:21,907;database.py;16;Article already in db
+INFO;2020-03-12 14:37:21,908;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/zuschauerausschluss-in-bundesliga-bringt-geisterstunde-im-deutschen-fussball-16673085.html
+WARNING;2020-03-12 14:37:22,486;database.py;16;Article already in db
+INFO;2020-03-12 14:37:22,487;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/wirtschaft/unternehmen/corona-geisterspiele-bundesliga-droht-140-millionen-euro-verlust-16672806.html
+WARNING;2020-03-12 14:37:23,250;database.py;16;Article already in db
+INFO;2020-03-12 14:37:23,250;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/mainz-05-muss-auf-torhueter-robin-zentner-verzichten-16672769.html
+WARNING;2020-03-12 14:37:23,827;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:23,827;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:23,828;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-bundesliga-derby-gladbach-gegen-koeln-ohne-fans-16672151.html
+WARNING;2020-03-12 14:37:24,735;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:24,736;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:24,736;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-so-teuer-werden-geisterspiele-fuer-die-bundesligaklubs-16672486.html
+WARNING;2020-03-12 14:37:25,527;database.py;16;Article already in db
+INFO;2020-03-12 14:37:25,528;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/bundesliga-heiko-herrlich-uebernimmt-den-fc-augsburg-16672143.html
+WARNING;2020-03-12 14:37:26,385;database.py;16;Article already in db
+WARNING;2020-03-12 14:37:26,386;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:26,386;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/anwalt-von-theo-zwanziger-kritisiert-in-wm-2006-affaere-gericht-16672542.html
+WARNING;2020-03-12 14:37:27,631;database.py;16;Article already in db
+INFO;2020-03-12 14:37:27,632;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/coronavirus-ganz-italien-ist-ein-sperrgebiet-16672147.html
+WARNING;2020-03-12 14:37:28,231;database.py;16;Article already in db
+INFO;2020-03-12 14:37:28,231;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/politik/ausland/coronavirus-hohe-zahl-der-infektionen-in-der-schweiz-16670930.html
+WARNING;2020-03-12 14:37:28,928;database.py;16;Article already in db
+INFO;2020-03-12 14:37:28,928;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/corona-sorgen-vor-europa-league-mit-eintracht-frankfurt-und-basel-16671714.html
+INFO;2020-03-12 14:37:30,618;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:37:30,619;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:30,619;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/fc-bayern-oliver-kahn-fuer-striktes-vorgehen-bei-rassismus-16671999.html
+INFO;2020-03-12 14:37:31,179;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:37:31,180;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-und-der-fussball-mehr-verantwortung-16671359.html
+INFO;2020-03-12 14:37:32,826;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:37:32,826;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/f-a-z-newsletter-schwarzer-montag-aendert-alles-16671660.html
+INFO;2020-03-12 14:37:33,592;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:37:33,594;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:33,594;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/gesellschaft/gesundheit/coronavirus/bayern-will-veranstaltungen-mit-mehr-als-1000-gaesten-untersagen-16671420.html
+INFO;2020-03-12 14:37:34,824;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:37:34,825;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/politik/inland/jens-spahn-zu-corona-der-kampf-um-die-intensivbetten-beginnt-16671295.html
+INFO;2020-03-12 14:37:35,558;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:37:35,559;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/wirtschaft/geisterspiele-und-absagen-drohen-bundesliga-und-konzerte-in-der-corona-falle-16671238.html
+INFO;2020-03-12 14:37:39,822;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:37:39,825;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:39,825;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/champions-league/coronavirus-bvb-gegen-psg-in-champions-league-ohne-fans-16670723.html
+INFO;2020-03-12 14:37:41,136;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:37:41,137;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:41,137;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/bundesliga-fc-augsburg-trennt-sich-von-trainer-martin-schmidt-16671097.html
+INFO;2020-03-12 14:37:42,235;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:37:42,235;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:42,236;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/coronavirus-in-bundesliga-wer-entschaedigt-fans-bei-geisterspiel-16670532.html
+INFO;2020-03-12 14:37:43,664;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:37:43,665;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/rhein-main/frankfurt-verein-setzt-sich-fuer-frauenrechte-im-fussball-ein-16670195.html
+INFO;2020-03-12 14:37:44,758;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:37:44,758;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:44,759;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/sportpolitik/aerger-im-prozess-um-wm-skandal-von-2006-angeklagten-fehlen-16670862.html
+INFO;2020-03-12 14:37:45,708;database.py;22;Article succsessfully stored
+WARNING;2020-03-12 14:37:45,709;webscraper_FAZ.py;33;autor could not be scraped
+INFO;2020-03-12 14:37:45,709;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/leon-goretzka-bei-fc-bayern-muenchen-nach-augsburg-frustriert-16670671.html
+INFO;2020-03-12 14:37:46,771;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:37:46,771;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/bundesliga/kos-leiter-michael-gabriel-ueber-ultras-dfb-dfl-und-hopp-protest-16668393.html
+INFO;2020-03-12 14:37:48,007;database.py;22;Article succsessfully stored
+INFO;2020-03-12 14:37:48,008;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-frankfurt-0-4-in-leverkusen-und-dfb-pokal-zu-fc-bayern-16670291.html
+WARNING;2020-03-12 14:37:49,581;database.py;16;Article already in db
+INFO;2020-03-12 14:37:49,582;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/fussball/juergen-klopp-und-fc-liverpool-vor-meistertitel-in-england-16670078.html

@@ -1,0 +1,60 @@
+INFO;2020-03-12 10:45:49,779;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 10:45:49,779;webscraper_FAZ.py;52;=====================================
+INFO;2020-03-12 10:45:49,779;webscraper_FAZ.py;54;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Digitalisierung&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 10:45:50,507;webscraper_FAZ.py;62;79 found on page
+INFO;2020-03-12 10:45:50,512;webscraper_FAZ.py;103;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/der-aufsteiger-eine-geschichte-deutschlands-von-1990-bis-heute-16666046.html
+WARNING;2020-03-12 10:45:51,240;database.py;16;Article already in db
+INFO;2020-03-12 10:45:51,241;webscraper_FAZ.py;103;Start scrape of article https://faz.net/aktuell/feuilleton/buecher/themen/hilary-mantels-trilogie-ueber-thomas-cromwell-16669666.html
+WARNING;2020-03-12 10:45:52,412;database.py;16;Article already in db
+INFO;2020-03-12 10:45:52,413;webscraper_FAZ.py;103;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/generationenvertrag-fragen-ohne-antworten-16660436.html
+WARNING;2020-03-12 10:45:53,450;database.py;16;Article already in db
+INFO;2020-03-12 10:45:53,451;webscraper_FAZ.py;103;Start scrape of article https://faz.net/aktuell/karriere-hochschule/hoersaal/warum-sich-mint-studierende-fuer-philosophie-interessieren-16666195.html
+WARNING;2020-03-12 10:45:53,938;database.py;16;Article already in db
+INFO;2020-03-12 10:45:53,939;webscraper_FAZ.py;103;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-frankfurt-0-4-in-leverkusen-und-dfb-pokal-zu-fc-bayern-16670291.html
+WARNING;2020-03-12 10:45:54,432;database.py;16;Article already in db
+INFO;2020-03-12 10:49:04,267;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 10:49:04,267;webscraper_FAZ.py;52;=====================================
+INFO;2020-03-12 10:49:04,267;webscraper_FAZ.py;54;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Digitalisierung&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 10:49:04,735;webscraper_FAZ.py;62;79 found on page
+INFO;2020-03-12 10:49:04,737;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/der-aufsteiger-eine-geschichte-deutschlands-von-1990-bis-heute-16666046.html
+WARNING;2020-03-12 10:49:05,215;database.py;16;Article already in db
+INFO;2020-03-12 10:49:05,216;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/feuilleton/buecher/themen/hilary-mantels-trilogie-ueber-thomas-cromwell-16669666.html
+WARNING;2020-03-12 10:49:05,751;database.py;16;Article already in db
+INFO;2020-03-12 10:49:05,752;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/generationenvertrag-fragen-ohne-antworten-16660436.html
+WARNING;2020-03-12 10:49:06,731;database.py;16;Article already in db
+INFO;2020-03-12 10:49:06,733;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/karriere-hochschule/hoersaal/warum-sich-mint-studierende-fuer-philosophie-interessieren-16666195.html
+WARNING;2020-03-12 10:49:07,745;database.py;16;Article already in db
+INFO;2020-03-12 10:49:07,746;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-frankfurt-0-4-in-leverkusen-und-dfb-pokal-zu-fc-bayern-16670291.html
+WARNING;2020-03-12 10:49:08,874;database.py;16;Article already in db
+INFO;2020-03-12 10:52:23,829;logger.py;11;Srart Scrape of FAZ with search-term 'Digitalisierung'
+INFO;2020-03-12 10:52:24,409;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 10:52:24,409;webscraper_FAZ.py;52;=====================================
+INFO;2020-03-12 10:52:24,409;webscraper_FAZ.py;54;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Digitalisierung&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 10:52:27,285;webscraper_FAZ.py;62;79 found on page
+INFO;2020-03-12 10:52:27,289;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/der-aufsteiger-eine-geschichte-deutschlands-von-1990-bis-heute-16666046.html
+WARNING;2020-03-12 10:52:28,000;database.py;16;Article already in db
+INFO;2020-03-12 10:52:28,001;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/feuilleton/buecher/themen/hilary-mantels-trilogie-ueber-thomas-cromwell-16669666.html
+WARNING;2020-03-12 10:52:28,648;database.py;16;Article already in db
+INFO;2020-03-12 10:52:28,649;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/generationenvertrag-fragen-ohne-antworten-16660436.html
+WARNING;2020-03-12 10:52:29,795;database.py;16;Article already in db
+INFO;2020-03-12 10:52:29,796;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/karriere-hochschule/hoersaal/warum-sich-mint-studierende-fuer-philosophie-interessieren-16666195.html
+WARNING;2020-03-12 10:52:30,707;database.py;16;Article already in db
+INFO;2020-03-12 10:52:30,708;webscraper_FAZ.py;108;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-frankfurt-0-4-in-leverkusen-und-dfb-pokal-zu-fc-bayern-16670291.html
+WARNING;2020-03-12 10:52:31,418;database.py;16;Article already in db
+CRITICAL;2020-03-12 10:52:31,418;webscraper_FAZ.py;71;!!!!! Scrape Stopped because no new articles were found !!!!!!
+INFO;2020-03-12 10:53:19,592;logger.py;11;=====================================
+INFO;2020-03-12 10:53:19,592;logger.py;12;Srart Scrape of FAZ with search-term 'Digitalisierung'
+INFO;2020-03-12 10:53:20,155;webscraper_FAZ.py;51;Start scrape of base page 1
+INFO;2020-03-12 10:53:20,155;webscraper_FAZ.py;53;Scrape URLhttps://www.faz.net/suche/s1.html?BTyp=redaktionelleInhalte&allboosted=&author=Vorname+Nachname&boostedresultsize=%24boostedresultsize&cid=&from=TT.MM.JJJJ&index=&query=Digitalisierung&resultsPerPage=80&sort=date&to=12.03.2020&username=Benutzername&BTyp=redaktionelleInhalte&chkBoxType_2=on
+INFO;2020-03-12 10:53:20,593;webscraper_FAZ.py;61;79 found on page
+INFO;2020-03-12 10:53:20,597;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/der-aufsteiger-eine-geschichte-deutschlands-von-1990-bis-heute-16666046.html
+WARNING;2020-03-12 10:53:20,989;database.py;16;Article already in db
+INFO;2020-03-12 10:53:20,990;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/feuilleton/buecher/themen/hilary-mantels-trilogie-ueber-thomas-cromwell-16669666.html
+WARNING;2020-03-12 10:53:21,453;database.py;16;Article already in db
+INFO;2020-03-12 10:53:21,453;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/politik/politische-buecher/generationenvertrag-fragen-ohne-antworten-16660436.html
+WARNING;2020-03-12 10:53:21,921;database.py;16;Article already in db
+INFO;2020-03-12 10:53:21,922;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/karriere-hochschule/hoersaal/warum-sich-mint-studierende-fuer-philosophie-interessieren-16666195.html
+WARNING;2020-03-12 10:53:22,348;database.py;16;Article already in db
+INFO;2020-03-12 10:53:22,349;webscraper_FAZ.py;107;Start scrape of article https://faz.net/aktuell/sport/rhein-main-sport/eintracht-frankfurt/eintracht-frankfurt-0-4-in-leverkusen-und-dfb-pokal-zu-fc-bayern-16670291.html
+WARNING;2020-03-12 10:53:22,830;database.py;16;Article already in db
+CRITICAL;2020-03-12 10:53:22,830;webscraper_FAZ.py;70;!!!!! Scrape Stopped because no new articles were found !!!!!!

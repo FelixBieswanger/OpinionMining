@@ -1,0 +1,100 @@
+INFO;2020-05-28 12:01:23,231;logger.py;11;=====================================
+INFO;2020-05-28 12:01:23,231;logger.py;12;Srart Scrape of financialtimes with search-term 'digitalisation'
+INFO;2020-05-28 12:01:24,749;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/d4fff7a2-9b63-11ea-871b-edeb99a20c6e
+INFO;2020-05-28 12:01:25,121;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/52c7fc06-9a70-11ea-adb1-529f96d8a00b
+INFO;2020-05-28 12:01:25,561;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/c23ebc5e-cbf3-4ad8-85aa-032b574d0562
+INFO;2020-05-28 12:01:26,042;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/90fa8f44-6847-11ea-a6ac-9122541af204
+INFO;2020-05-28 12:01:26,465;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/74be707e-6848-11ea-a6ac-9122541af204
+WARNING;2020-05-28 12:01:26,483;financialtimes.py;67;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/05/04/1588581653000/Markets-Now---Monday-4th-May-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1121585e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 12:01:26,483;financialtimes.py;68;1
+INFO;2020-05-28 12:01:26,973;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/10f87eb3-87f9-46ea-88ab-8706adefe72d
+INFO;2020-05-28 12:01:27,526;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/e0705292-c9cb-4d4e-8586-4f1174665e83
+INFO;2020-05-28 12:01:28,174;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/317b4f61-672e-4c4b-b816-71e0ff63cab2
+INFO;2020-05-28 12:01:28,603;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/1ab41f68-7e30-11ea-82f6-150830b3b99a
+INFO;2020-05-28 12:01:29,018;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/ffd849da-271e-40da-b3a3-c3fb39e3c953
+WARNING;2020-05-28 12:01:29,021;financialtimes.py;67;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/04/08/1586347808000/Markets-Now---Wednesday-8th-April-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1128c3400>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 12:01:29,021;financialtimes.py;68;1
+WARNING;2020-05-28 12:01:29,024;financialtimes.py;67;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/03/31/1585644595000/Markets-Now---Tuesday-31st-March-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1128c3310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 12:01:29,024;financialtimes.py;68;1
+INFO;2020-05-28 12:01:29,503;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/c0014ce4-6273-11ea-abcc-910c5b38d9ed
+INFO;2020-05-28 12:01:29,937;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/211c3db0-682b-11ea-800d-da70cff6e4d3
+WARNING;2020-05-28 12:01:29,940;financialtimes.py;67;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/03/04/1583333776000/Is-data-this-deflationary--/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x112b81eb0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 12:01:29,940;financialtimes.py;68;1
+INFO;2020-05-28 12:01:30,332;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/13ec6eac-5df5-11ea-8033-fa40a0d65a98
+INFO;2020-05-28 12:01:30,841;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/9188c5ba-58ad-11ea-abe5-8e03987b7b20
+INFO;2020-05-28 12:01:31,279;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/0f62fd52-54a8-11ea-8841-482eed0038b1
+INFO;2020-05-28 12:01:31,671;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/b0dc8008-4f4a-11ea-95a0-43d18ec715f5
+INFO;2020-05-28 12:01:32,203;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/f0d722c2-483c-11ea-aeb3-955839e06441
+INFO;2020-05-28 12:01:36,155;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/6279b330-4811-11ea-aee2-9ddbdc86190d
+INFO;2020-05-28 12:01:36,544;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/8095529a-47ec-11ea-aeb3-955839e06441
+INFO;2020-05-28 12:01:36,935;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/6d4d719e-442d-11ea-a43a-c4b328d9061c
+WARNING;2020-05-28 12:01:36,938;financialtimes.py;67;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/01/31/1580496128000/Amazon-paradox-binds-policymakers-/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x112a247c0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 12:01:36,938;financialtimes.py;68;2
+INFO;2020-05-28 12:01:37,515;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/9660b848-4414-11ea-a43a-c4b328d9061c
+INFO;2020-05-28 12:01:37,899;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/839b0592-eb61-48a2-8934-6a7ac31c06a1
+WARNING;2020-05-28 12:01:37,902;financialtimes.py;67;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/01/20/1579512844000/Markets-not-live--Monday-20th-January-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x111d08d30>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 12:01:37,902;financialtimes.py;68;2
+INFO;2020-05-28 12:01:38,451;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/00f9135c-3840-11ea-a6d3-9a26f8c3cba4
+INFO;2020-05-28 12:01:38,920;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/401ca73e-36b9-11ea-ac3c-f68c10993b04
+INFO;2020-05-28 12:01:39,428;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/f5861bca-306d-11ea-9703-eea0cae3f0de
+INFO;2020-05-28 12:01:39,902;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/73213036-1dd8-11ea-97df-cc63de1d73f4
+INFO;2020-05-28 12:01:40,387;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/83d900fc-e921-11e9-aefb-a946d2463e4b
+INFO;2020-05-28 12:01:40,893;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/17761428-14d1-11ea-9ee4-11f260415385
+INFO;2020-05-28 12:01:41,320;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/aab0945c-f62c-11e9-bbe1-4db3476c5ff0
+INFO;2020-05-28 12:01:41,793;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/e87da276-110b-11ea-a7e6-62bf4f9e548a
+INFO;2020-05-28 12:01:42,309;database.py;30;Article succsessfully stored, URL:https://www.ft.com/content/22fdffb4-0d0a-11ea-bb52-34c8d9dc6d84
+WARNING;2020-05-28 12:01:42,312;financialtimes.py;67;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2019/11/21/1574373586000/Can-fintech-bridge-the-inequality-gap-/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x11225db50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 12:01:42,312;financialtimes.py;68;2
+INFO;2020-05-28 13:13:01,811;logger.py;11;=====================================
+INFO;2020-05-28 13:13:01,812;logger.py;12;Srart Scrape of financialtimes with search-term 'digitalisation'
+INFO;2020-05-28 13:13:10,953;logger.py;11;=====================================
+INFO;2020-05-28 13:13:10,954;logger.py;12;Srart Scrape of financialtimes with search-term 'digitalisation'
+INFO;2020-05-28 13:13:36,954;logger.py;11;=====================================
+INFO;2020-05-28 13:13:36,954;logger.py;12;Srart Scrape of financialtimes with search-term 'digitalisation'
+WARNING;2020-05-28 13:13:38,272;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:38,864;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:39,456;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:40,332;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:40,945;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:40,962;financialtimes.py;76;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/05/04/1588581653000/Markets-Now---Monday-4th-May-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1054bea00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:13:40,962;financialtimes.py;77;1
+WARNING;2020-05-28 13:13:41,487;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:42,047;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:43,013;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:43,942;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:44,528;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:44,530;financialtimes.py;76;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/04/08/1586347808000/Markets-Now---Wednesday-8th-April-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x105be7880>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:13:44,530;financialtimes.py;77;1
+WARNING;2020-05-28 13:13:44,533;financialtimes.py;76;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/03/31/1585644595000/Markets-Now---Tuesday-31st-March-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x105be76a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:13:44,533;financialtimes.py;77;1
+WARNING;2020-05-28 13:13:45,123;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:45,653;database.py;24;Article already in db
+WARNING;2020-05-28 13:13:45,656;financialtimes.py;76;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/03/04/1583333776000/Is-data-this-deflationary--/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x105eb4370>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:13:45,656;financialtimes.py;77;1
+INFO;2020-05-28 13:15:35,664;logger.py;11;=====================================
+INFO;2020-05-28 13:15:35,665;logger.py;12;Srart Scrape of financialtimes with search-term 'digitalisation'
+WARNING;2020-05-28 13:15:36,614;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:36,921;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:37,210;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:37,499;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:37,791;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:37,794;financialtimes.py;66;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/05/04/1588581653000/Markets-Now---Monday-4th-May-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x112eb3d90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:15:37,795;financialtimes.py;67;1
+WARNING;2020-05-28 13:15:38,096;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:38,412;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:38,680;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:38,944;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:39,198;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:39,201;financialtimes.py;66;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/04/08/1586347808000/Markets-Now---Wednesday-8th-April-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x113604b80>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:15:39,201;financialtimes.py;67;1
+WARNING;2020-05-28 13:15:39,204;financialtimes.py;66;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/03/31/1585644595000/Markets-Now---Tuesday-31st-March-2020/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1136049a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:15:39,204;financialtimes.py;67;1
+WARNING;2020-05-28 13:15:39,493;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:39,787;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:39,790;financialtimes.py;66;HTTPSConnectionPool(host='www.ft.comhttp', port=443): Max retries exceeded with url: //ftalphaville.ft.com/2020/03/04/1583333776000/Is-data-this-deflationary--/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1138d0670>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+WARNING;2020-05-28 13:15:39,790;financialtimes.py;67;1
+WARNING;2020-05-28 13:15:40,200;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:40,653;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:41,158;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:41,640;database.py;24;Article already in db
+WARNING;2020-05-28 13:15:42,174;database.py;24;Article already in db

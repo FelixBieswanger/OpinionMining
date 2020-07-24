@@ -1,0 +1,12 @@
+INFO;2020-05-19 11:41:11,597;logger.py;11;=====================================
+INFO;2020-05-19 11:41:11,598;logger.py;12;Srart Scrape of latimes with search-term 'digitalization+digital'
+INFO;2020-05-19 11:41:14,247;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/politics/story/2020-05-13/democrats-wrote-the-playbook-for-digital-organizing-so-why-is-trump-running-circles-around-them
+INFO;2020-05-19 11:41:14,544;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/entertainment-arts/story/2020-05-13/coronavirus-theater-digital-streaming-risks
+INFO;2020-05-19 11:41:14,834;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/opinion/story/2020-05-04/digital-currency-china-coronavirus-covid
+INFO;2020-05-19 11:41:15,115;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/entertainment-arts/tv/story/2020-05-04/upload-amazon-robbie-amell-greg-daniels
+INFO;2020-05-19 11:41:15,403;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/entertainment-arts/story/2020-05-02/coronavirus-quarantine-rupaul-dragcon
+INFO;2020-05-19 11:41:15,712;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/california/story/2020-04-20/governor-newsom-and-wife-outline-progress-on-closing-digital-divide
+INFO;2020-05-19 11:41:16,045;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/entertainment-arts/business/story/2020-04-30/nbcuniversal-ceo-jeff-shell-digital-film-releases-inevitable
+INFO;2020-05-19 11:41:16,387;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/entertainment-arts/business/story/2020-04-13/coronavirus-universal-says-trolls-was-big-on-vod-but-what-does-that-mean-for-movies
+INFO;2020-05-19 11:41:16,694;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/entertainment-arts/music/story/2020-02-23/bts-press-conference-youtube-livestream-coronavirus
+INFO;2020-05-19 11:41:16,997;database.py;30;Article succsessfully stored, URL:https://www.latimes.com/entertainment-arts/movies/story/2020-03-24/1917-onward-birds-of-prey-new-home-video

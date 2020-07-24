@@ -1,0 +1,33 @@
+INFO;2020-05-05 11:43:05,201;logger.py;11;=====================================
+INFO;2020-05-05 11:43:05,201;logger.py;12;Srart Scrape of zeit with search-term 'digitalisierung'
+WARNING;2020-05-05 11:43:09,218;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:09,437;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:09,726;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:10,014;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:10,306;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:10,719;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:11,123;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:11,869;zeitonline.py;57;'article_url'
+WARNING;2020-05-05 11:43:12,156;zeitonline.py;57;'article_url'
+INFO;2020-05-05 11:45:13,729;logger.py;11;=====================================
+INFO;2020-05-05 11:45:13,729;logger.py;12;Srart Scrape of zeit with search-term 'digitalisierung'
+WARNING;2020-05-05 11:45:14,526;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:14,715;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:14,918;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:15,114;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:15,465;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:15,707;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:16,116;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:16,345;zeitonline.py;59;'article_url'
+WARNING;2020-05-05 11:45:17,287;zeitonline.py;59;'article_url'
+INFO;2020-05-05 11:46:04,610;logger.py;11;=====================================
+INFO;2020-05-05 11:46:04,610;logger.py;12;Srart Scrape of zeit with search-term 'digitalisierung'
+INFO;2020-05-05 11:46:05,672;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/gesellschaft/schule/2020-05/homeschooling-schuloeffnungen-coronavirus-unterricht-schule-leseraufruf
+INFO;2020-05-05 11:46:05,891;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/politik/ausland/2020-05/corona-folgen-konjunktur-ungleichheit-globalisierung-sigmar-gabriel
+INFO;2020-05-05 11:46:06,130;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/politik/deutschland/2020-05/friedrich-merz-coronavirus-politik-wissenschaft-massnahmen-pandemie
+INFO;2020-05-05 11:46:07,043;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/2020/19/kuenstler-autor-regisseur-beschaeftigung-coronavirus-lockdown
+INFO;2020-05-05 11:46:07,459;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/politik/deutschland/2020-04/spd-fraktion-eva-hoegl-bundestag-wehrbeauftragte-verteidigung
+INFO;2020-05-05 11:46:07,713;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/wissen/gesundheit/2020-04/arztbesuche-nach-corona-arbeitsunfaehigkeitsbescheinigung-telemedizin-videosprechstunde
+INFO;2020-05-05 11:46:07,986;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/wissen/gesundheit/2020-04/covid-19-aktuell-coronavirus-nachrichten-am-mittwoch-29-april-2020
+INFO;2020-05-05 11:46:08,213;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/2020/19/wirtschaftskrise-coronavirus-klimaschutz-gruene-energie-digitalisierung
+INFO;2020-05-05 11:46:09,028;database.py;30;Article succsessfully stored, URL:https://www.zeit.de/hamburg/2020-04/digitalisierung-senioren-teilhabe-corona-krise-inklusion
