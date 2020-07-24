@@ -9,13 +9,25 @@ import os
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./resources/google_cloud_api.json"
 
+"""
+Get german articles that were not already translated
+"""
+
 db = Database()
-
-
 german_articles = db.get_querry(collection="date", querry={"$and": [{"language": "de"}, {"text-de": {"$exists":False}}]})
+
+"""
+Start index (since script crashes sometimes)
+"""
 
 index = 655
 old_index = 0
+
+
+"""
+Translate cleaned article text and store in database with own attribute
+(so original text doesnt get lost and can be restored when needed)
+"""
 
 while index<len(german_articles):
 

@@ -1,9 +1,16 @@
 from database import Database
 from random import randint
 
-db = Database()
 
+"""
+Get Sample Articles from database 
+"""
+db = Database()
 sample_data = db.get_querry(collection="sample",querry={"manual_sentiment":{"$exists":False}})
+
+"""
+Randomly pick one and display user
+"""
 sample = sample_data[randint(0,len(sample_data)-1)]
 print()
 print(len(sample_data),"übrig!")
@@ -16,6 +23,11 @@ print("=======================")
 print("Headline",sample["headline"])
 print()
 print(sample["text"])
+
+
+"""
+Read and Store useres sentiment value
+"""
 
 bewertung = input("Bitte gib deine Bewertung ein: ")
 try:

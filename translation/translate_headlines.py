@@ -7,15 +7,25 @@ from urllib.error import HTTPError
 import traceback
 import os
 
+"""
+The Headlines where forgotton the first time translated
+(so here is an extra script, because needed for an sentiment calcualtion approach)
+"""
+
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./resources/google_cloud_api.json"
 
+"""
+Get German Articles 
+"""
 db = Database()
-
-
 german_articles = db.get_querry(collection="date", querry={"language": "de"})
 
 index = 0
 old_index = 0
+
+"""
+Translate Headline and store in database
+"""
 
 while index<len(german_articles):
 

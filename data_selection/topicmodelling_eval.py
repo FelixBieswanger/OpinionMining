@@ -11,16 +11,26 @@ import os
 import matplotlib.pyplot as plt
 from database import Database
 
+"""
+Get date selected data from database
+"""
 db = Database()
-
 source_data = db.get_all(collection="date")
+
+"""
+Do some Proprocessing
+"""
 text = [i["lda"] for i in source_data]
 text_data = [t.split(" ") for t in text]
 dictionary = corpora.Dictionary(text_data)
 corpus = [dictionary.doc2bow(text) for text in text_data]
 
+
+"""
+Get all trained topic modells and evalute them using topic coherence measure
+"""
 result = dict()
-path = "/Users/felixbieswanger/Desktop/Uni_Stuff/Bachelorarbeit/OpionionMining/lda_models/"
+path = "data_selection/lda_models/"
 for file in os.listdir(path):
     split = file.split(".")
     split2 = file.split("_")
@@ -38,6 +48,10 @@ for file in os.listdir(path):
 pd.Series(result, index=result.keys()).to_csv("result_lda.csv")
 
 
+
+"""
+Plot 
+"""
 y = list(result.values())
 x = list(result.keys())
 for i in range(len(x)):
