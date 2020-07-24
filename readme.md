@@ -4,7 +4,7 @@ Hier befinden sich jeglicher Source Code, der zu der während der Erstellung der
 
 Nachfolgend ist eine Beschreibung aller Inhalte dieses Ordners.
 
-###**Ordner: data_selection**
+### **Ordner: data_selection**
 **Zeitliche Selektion (Kapitel 3.3.3.1)**
 - date_selection.py: Auswahl der Artikel basierend auf den Veröffentlichungsdatum 
 
@@ -15,7 +15,7 @@ Nachfolgend ist eine Beschreibung aller Inhalte dieses Ordners.
 
 Zudem befinden sich hier auch alle trainierten Modell im **SubOrdner: lda_models** und eine csv mit den Ergebnissen der Evaulierung.
 
-###**Ordner: sentiment**
+### **Ordner: sentiment**
 **Sentiment Analyse (Kapitel 3.3.4)**
 -evaluation.py: Besimmtung des Median Absoulte Error zwischen manuel versehenen Tonalität und 
 automatisch bestimmten
@@ -25,27 +25,27 @@ automatisch bestimmten
 -evaluation_other_approaches.py: Bestimmung der Tonalität der alternativ Ansätze und 
 Erstellung des Plots
     
-###**Ordner: translation**
+### **Ordner: translation**
 **Standardisierung (Kapitel 3.3.2)**
 -translate.py: Übersetzen des Textes der deutschen Artikel
 -translate_headlines.py: Übersetzen der Überschriften der deutschen Artikel 
 (relevant für ein Ansatz der Tonalitätsbestimmtung)
 
-###**Ordner: webscraper**
+### **Ordner: webscraper**
 **Webscraper (Kapitel 3.3.1.2)**
 -Hier sind alle Webscraper enthalten. Zudem auch während dem Scraping erzeugt Logs zum nachvollziehen,
 ob der Scrape erfolgreich geklappt hat
 
 
-###**Ordner: outdated**
+### **Ordner: outdated**
 Hierin sind Ansätze die anganfen wurden zu implementieren aber nicht in die Arbeit geschafft haben.
 Daruter fällt ein Ansatz zur Datenselektion mit Doc2Vec und der Scrape der Quelle Twitter.
 
 
-###**Ordner: plots**
+### **Ordner: plots**
 Hierin sind alle Scripte für die Erstellung der Plots. Zudem im **Subordner: images** auch die Plots abgelegt als png.     
 
-###**Ordner: resources**
+### **Ordner: resources**
 Hierin sind alle Resources (Scripte & Files) enthalten, die oft in anderen Scripten verwendet werden.
 -database.py: Regelung des Datenflusses mit der Datenbank (mongodb)
 -keys.py: Bereitstellung der verwendeten Keys (API und Passwörter), tatsächliche Key-File allerdings nicht in der Abgabe aus Datenschutzgründen.
@@ -54,9 +54,9 @@ Hierin sind alle Resources (Scripte & Files) enthalten, die oft in anderen Scrip
 
 Zusätzlich sind hier die Antworten des Survey zur Interpretation der Wordclouds (für besser verständliche Plots)
 
-####**File: requirements.txt**
+#### **File: requirements.txt**
 -liste aller verwendeten Pyhton Libraries, die gemäß pip install -r requirements.txt installiert werden können
 
-####**File: .gitignore**
+#### **File: .gitignore**
 -Spezifikation aller Files die nicht von Git versioniert werden sollen
 
