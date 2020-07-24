@@ -2,9 +2,7 @@
 
 Hier befinden sich jeglicher Source Code, der zu der während der Erstellung der Bachelorarbeit verwendet wurde. Dabei ist das Projekt inhaltlich entsprechend der Arbeit gegliedert.
 
-# Files
-
- **Ordner: data_selection**
+**Ordner: data_selection**
 Zeitliche Selektion (Kapitel 3.3.3.1)
 - date_selection.py: Auswahl der Artikel basierend auf den Veröffentlichungsdatum 
 
