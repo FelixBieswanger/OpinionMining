@@ -17,23 +17,23 @@ Zudem befinden sich hier auch alle trainierten Modell im **SubOrdner: lda_models
 
 ### **Ordner: sentiment**
 **Sentiment Analyse (Kapitel 3.3.4)**
--evaluation.py: Besimmtung des Median Absoulte Error zwischen manuel versehenen Tonalität und 
+- evaluation.py: Besimmtung des Median Absoulte Error zwischen manuel versehenen Tonalität und 
 automatisch bestimmten
--labeling_process.py: Manueller Labeling Process (Commandline Interface)
--selection.py: Zufällige Auswahl der Artikel für die vorabdurchgeführte Stichprobe
--calc_sentiment.py: Bestimmung der Tonalität und speichern in der Datenbank
--evaluation_other_approaches.py: Bestimmung der Tonalität der alternativ Ansätze und 
+- labeling_process.py: Manueller Labeling Process (Commandline Interface)
+- selection.py: Zufällige Auswahl der Artikel für die vorabdurchgeführte Stichprobe
+- calc_sentiment.py: Bestimmung der Tonalität und speichern in der Datenbank
+- evaluation_other_approaches.py: Bestimmung der Tonalität der alternativ Ansätze und 
 Erstellung des Plots
     
 ### **Ordner: translation**
 **Standardisierung (Kapitel 3.3.2)**
--translate.py: Übersetzen des Textes der deutschen Artikel
--translate_headlines.py: Übersetzen der Überschriften der deutschen Artikel 
+- translate.py: Übersetzen des Textes der deutschen Artikel
+- translate_headlines.py: Übersetzen der Überschriften der deutschen Artikel 
 (relevant für ein Ansatz der Tonalitätsbestimmtung)
 
 ### **Ordner: webscraper**
 **Webscraper (Kapitel 3.3.1.2)**
--Hier sind alle Webscraper enthalten. Zudem auch während dem Scraping erzeugt Logs zum nachvollziehen,
+Hier sind alle Webscraper enthalten. Zudem auch während dem Scraping erzeugt Logs zum nachvollziehen,
 ob der Scrape erfolgreich geklappt hat
 
 
@@ -47,16 +47,16 @@ Hierin sind alle Scripte für die Erstellung der Plots. Zudem im **Subordner: im
 
 ### **Ordner: resources**
 Hierin sind alle Resources (Scripte & Files) enthalten, die oft in anderen Scripten verwendet werden.
--database.py: Regelung des Datenflusses mit der Datenbank (mongodb)
--keys.py: Bereitstellung der verwendeten Keys (API und Passwörter), tatsächliche Key-File allerdings nicht in der Abgabe aus Datenschutzgründen.
--logger.py: Implementiertung eines Loggers
--preprocessung.py: verschiedenste Preprocessing funktionenen
+- database.py: Regelung des Datenflusses mit der Datenbank (mongodb)
+- keys.py: Bereitstellung der verwendeten Keys (API und Passwörter), tatsächliche Key-File allerdings nicht in der Abgabe aus Datenschutzgründen.
+- logger.py: Implementiertung eines Loggers
+- preprocessung.py: verschiedenste Preprocessing funktionenen
 
 Zusätzlich sind hier die Antworten des Survey zur Interpretation der Wordclouds (für besser verständliche Plots)
 
 #### **File: requirements.txt**
--liste aller verwendeten Pyhton Libraries, die gemäß pip install -r requirements.txt installiert werden können
+Liste aller verwendeten Pyhton Libraries, die gemäß pip install -r requirements.txt installiert werden können
 
 #### **File: .gitignore**
--Spezifikation aller Files die nicht von Git versioniert werden sollen
+Spezifikation aller Files die nicht von Git versioniert werden sollen
 
