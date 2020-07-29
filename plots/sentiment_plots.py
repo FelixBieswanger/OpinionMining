@@ -151,4 +151,46 @@ plt.xticks(rotation=90)
 plt.ylabel("Tonalität")
 plt.title("Durchschnittliche Tonalität je Quelle",fontsize=10)
 plt.savefig("plots/images/barchart_source.png",bbox_inches = 'tight')
+
+
+
+"""
+Plot Boxplot mean sentiment regarding topics and source language
+"""
+
+sentiments = dict()
+srange = [i for i in range(22)]
+for topic in srange:
+    sentiments[topic_names[topic]] = dict()
+    for lang in ["de", "en"]:
+        sentiments[topic_names[topic]][lang] = list()
+
+for art in source_data:
+    for topic in art["topics"]:
+        sentiments[topic_names[topic]][art["language"]].append(
+            art["sentiment"])
+
+
+de_means = list()
+en_means = list()
+for topic in sentiments.keys():
+    de_means.append(mean(sentiments[topic]["de"]))
+    en_means.append(mean(sentiments[topic]["en"]))
+
+
+labels = list(sentiments.keys())
+x = np.arange(len(labels))  # the label locations
+width = 0.3  # the width of the bars
+
+fig, ax = plt.subplots(figsize=(10, 5), dpi=100)
+rects1 = ax.bar(x - width/2, de_means, width, label='de')
+rects2 = ax.bar(x + width/2, en_means, width, label='en')
+
+ax.set_ylabel('Tonalität')
+ax.set_title('Durchschnittliche Tonalität je Topic')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+plt.legend()
+plt.xticks(rotation=90)
+plt.savefig("plots/images/mean_sentiment_topic.png")
     
