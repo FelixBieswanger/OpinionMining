@@ -3,6 +3,7 @@ import os
 import sys
 sys.path.append("./")
 from resources.database import Database
+import resources.color_sheme as color_sheme
 import pandas as pd
 import numpy as np
 
@@ -34,17 +35,19 @@ plot_hand = list()
 fig, ax = plt.subplots(figsize=(17, 10), dpi=222)
 width = 0.5
 terms = list(store.keys())
+colors = color_sheme.get_colors()[:6]
 for term, arr in zip(terms, store.values()):
     indexterm = terms.index(term)
     if indexterm == 0:
-        plot_hand.append(plt.bar(xlabel, store[term], width)[0])
+        plot_hand.append(
+            plt.bar(xlabel, store[term], width, color=colors[terms.index(term)])[0])
 
     else:
         sum_arr = np.array((0, 0, 0, 0,0,0))
         for prevterm in terms[:indexterm]:
             sum_arr += np.array(store[prevterm])
         plot_hand.append(
-            plt.bar(xlabel, store[term], width, bottom=sum_arr)[0])
+            plt.bar(xlabel, store[term], width, bottom=sum_arr, color=colors[terms.index(term)])[0])
 
 
 plt.ylabel("Artikelanzahl",fontsize=12)

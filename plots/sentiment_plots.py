@@ -14,7 +14,8 @@ import matplotlib.pyplot as plt
 from resources.database import Database
 import resources.preprocessing as pre
 import pandas as pd
-
+import resources.color_sheme as color_sheme
+plt.rcParams.update(plt.rcParamsDefault)
 
 """
 Get Data
@@ -24,8 +25,8 @@ db = Database()
 source_data = db.get_all(collection="selected2")
 
 data = {
-    "Anglo-Amerikanischer Sprachraum": [art for art in source_data if art["language"]=="en"],
-    "Deutscher Sprachraum": [art for art in source_data if art["language"] == "de"]
+    "Deutscher Sprachraum": [art for art in source_data if art["language"] == "de"],
+    "Anglo-Amerikanischer Sprachraum": [art for art in source_data if art["language"]=="en"]
     }
 
 """
@@ -35,10 +36,11 @@ Plot Histogram
 #plot en vs de
 plt.figure(figsize=(10, 10), dpi=222)
 sent = dict()
+colors = color_sheme.get_colors_lang()
 for lang in data.keys():
     sent[lang] = [art["sentiment"] for art in data[lang]]
     sns.distplot(sent[lang], label=lang+", mean=" +
-                 str(round(mean(sent[lang]), 3)), kde=False)
+                 str(round(mean(sent[lang]), 3)), kde=True, color=colors[list(data.keys()).index(lang)])
 
 plt.xlabel("Tonalität")
 plt.ylabel("Häufigkeit")
@@ -50,7 +52,7 @@ plt.savefig("plots/images/verteilung_sentiment.png")
 """
 Plot TimeSeries
 """
-
+plt.rcParams.update(plt.rcParamsDefault)
 plt.figure(figsize=(15,8))
 for lang in data.keys():
     x = list()
@@ -60,18 +62,20 @@ for lang in data.keys():
         y.append(art["sentiment"])
     x, y = zip(*sorted(zip(x, y)))
     y = SimpleExpSmoothing(y).fit(smoothing_level=0.075).fittedvalues
-    plt.plot(x,y,label=lang)
+    plt.plot(x,y,label=lang,color=colors[list(data.keys()).index(lang)])
     
     # calc the trendline
     x1 = [i.timestamp() for i in x]
     z = np.polyfit(x1, y, 1)
     p = np.poly1d(z)
     trendline_function="y="+str(z[0])+"x +("+str(z[1])+")"
-    plt.plot(x,p(x1),label=lang+" trendline: "+trendline_function)  
+    plt.plot(x, p(x1), label=lang+" trendline: "+trendline_function,
+             color=colors[list(data.keys()).index(lang)])
 plt.title("Tonalität im Zeitverlauf",fontsize=15)
 plt.ylabel("Tonalität",fontsize=12)
 plt.legend()
-plt.savefig("plots/images/zeitreihen.png",bbox_inches='tight')
+plt.savefig("plots/images/zeitreihen.png",bbox_inches=0)
+
 
 
 """
@@ -182,9 +186,9 @@ labels = list(sentiments.keys())
 x = np.arange(len(labels))  # the label locations
 width = 0.3  # the width of the bars
 
-fig, ax = plt.subplots(figsize=(10, 5), dpi=100)
-rects1 = ax.bar(x - width/2, de_means, width, label='de')
-rects2 = ax.bar(x + width/2, en_means, width, label='en')
+fig, ax = plt.subplots(figsize=(10, 5), dpi=222)
+rects1 = ax.bar(x - width/2, de_means, width, label='de',color=colors[0])
+rects2 = ax.bar(x + width/2, en_means, width, label='en',color=colors[1])
 
 ax.set_ylabel('Tonalität')
 ax.set_title('Durchschnittliche Tonalität je Topic')
@@ -192,5 +196,5 @@ ax.set_xticks(x)
 ax.set_xticklabels(labels)
 plt.legend()
 plt.xticks(rotation=90)
-plt.savefig("plots/images/mean_sentiment_topic.png")
+plt.savefig("plots/images/mean_sentiment_topic.png", bbox_inches='tight')
     

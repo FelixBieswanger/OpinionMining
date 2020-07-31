@@ -14,7 +14,12 @@ import seaborn as sns
 from resources.database import Database
 import resources.preprocessing as pre
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+import resources.color_sheme as color_sheme
+
+
 analyser = SentimentIntensityAnalyzer()
+sns.set_style("white")
+sns.set_palette(sns.color_palette(color_sheme.get_colors()))
 
 """
 Method that defines all sentiment calculation approaches
@@ -105,7 +110,7 @@ Get relevant data from database
 db = Database()
 source_data = db.get_all(collection="selected2")
 
-data = {"en":list(),"de":list()}
+data = {"de": list(),"en": list()}
 
 for art in source_data:
     if art["language"] =="en":
@@ -161,5 +166,9 @@ for tool,a in zip(tools_plot,ax.flat):
     a.title.set_text(tool+", p-Wert: "+p)
 fig.tight_layout(pad=3.0)
 fig.suptitle("Sentimentverteilung aller Ansätze",fontsize=15)
-fig.savefig("plots/images/verteilungenderalternativenansätze.png",bbox_inches='tight')
+try:
+    fig.grid(False)
+except:
+    pass
+fig.savefig("plots/images/verteilungenderalternativenansätze.png", bbox_inches='tight')
 

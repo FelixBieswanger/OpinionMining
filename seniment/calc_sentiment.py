@@ -32,10 +32,8 @@ def calc_sent(article):
     result_t = 0
     result_v = 0
     for sent in sentences:
-        result_t += TextBlob(sent).sentiment.polarity
         result_v += analyser.polarity_scores(sent)["compound"]
 
-    sentiments["textblob_ansatz1"] = result_t/len(sentences)
     sentiments["vader_ansatz1"] = result_v/len(sentences)
 
     #calc sentiment with stronger weigth of first and last forth of article
@@ -75,8 +73,6 @@ def calc_sent(article):
             section_result["mid"]["v"] + section_result["first"]["v"] * weight
         sentiments["vader_ansatz3"] = section_sent/(weight*2+1)
     except Exception as e:
-        print(e)
-        sentiments["textblob_ansatz3"] = sentiments["textblob_ansatz1"]
         sentiments["vader_ansatz3"] = sentiments["vader_ansatz1"]
 
     return sentiments
@@ -96,7 +92,7 @@ data = {"Anglo-Amerikanischer Sprachraum": list(), "Deutscher Sprachraum": list(
 
 for art in source_data:
     art["sentiment"] = calc_sent(art)["vader_ansatz3"]
-    db.update_article(collection="selected2",art)
+    db.update_article(collection="selected2",data=art)
     if art["language"] == "en":
         data["Anglo-Amerikanischer Sprachraum"].append(art)
     else:

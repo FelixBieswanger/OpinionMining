@@ -2,10 +2,11 @@ import matplotlib.pyplot as plt
 import os
 import sys
 sys.path.append("./")
-from database import Database
+from resources.database import Database
 import pandas as pd
 import numpy as np
-
+import resources.color_sheme as color_sheme
+plt.rcParams.update(plt.rcParamsDefault)
 db = Database()
 filename = os.path.basename(__file__).split(".")[0]
 
@@ -44,18 +45,20 @@ store = new_store
 plot_hand = list()
 terms = list(store.keys())
 width = 0.5
-plt.figure(figsize=(10, 5), dpi=200)
+fig = plt.figure(figsize=(10, 5), dpi=222)
+colors = color_sheme.get_colors()[:5]
 for term, arr in zip(terms, store.values()):
     indexterm = terms.index(term)
     if indexterm == 0:
-        plot_hand.append(plt.bar(sources, store[term], width)[0])
+        plot_hand.append(plt.bar(sources, store[term], width,color=colors[terms.index(term)])[0])
 
     else:
         sum_arr = np.array((0, 0, 0, 0, 0, 0))
         for prevterm in terms[:indexterm]:
             sum_arr += np.array(store[prevterm])
         plot_hand.append(
-            plt.bar(sources, store[term], width, bottom=sum_arr)[0])
+            plt.bar(sources, store[term], width, bottom=sum_arr, color=colors[terms.index(term)])[0])
 
 plt.legend(plot_hand, list(store.keys()))
-plt.savefig("plots/images/"+filename+".png")
+plt.savefig("plots/images/"+filename+".png", bbox_inches=0)
+
