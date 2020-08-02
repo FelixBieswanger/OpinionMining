@@ -1,6 +1,7 @@
 # Source Code zur Bachelorarbeit
 
-Hier befinden sich jeglicher Source Code, der zu der während der Erstellung der Bachelorarbeit verwendet wurde. Dabei ist das Projekt inhaltlich entsprechend der Arbeit gegliedert.
+Hier befinden sich jeglicher Source Code, der zu der während der Erstellung der Bachelorarbeit verwendet wurde. Dabei ist das Projekt inhaltlich entsprechend der Arbeit gegliedert. Der Source Code steht auch in einem GitHub Repository zur Verfügung
+(URL: https://github.com/FelixBieswanger/OpinionMining)
 
 Nachfolgend ist eine Beschreibung aller Inhalte dieses Ordners.
 
