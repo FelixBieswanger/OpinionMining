@@ -18,8 +18,7 @@ import resources.color_sheme as color_sheme
 
 
 analyser = SentimentIntensityAnalyzer()
-sns.set_style("white")
-sns.set_palette(sns.color_palette(color_sheme.get_colors()))
+colors = color_sheme.get_colors_lang()
 
 """
 Method that defines all sentiment calculation approaches
@@ -110,7 +109,7 @@ Get relevant data from database
 db = Database()
 source_data = db.get_all(collection="selected2")
 
-data = {"de": list(),"en": list()}
+data = {"de": list(), "en": list()}
 
 for art in source_data:
     if art["language"] =="en":
@@ -135,7 +134,7 @@ for lang in data.keys():
             art[tool] = result[tool]
 
 
-results = {"en":dict(),"de":dict()}
+results ={"de":dict(),"en":dict()}
 for lang in data.keys():
     for tool in tools:
         results[lang][tool] = [art[tool] for art in data[lang]]
@@ -153,7 +152,8 @@ for tool,a in zip(tools_plot,ax.flat):
     for lang in results.keys():
         data.append(results[lang][tool])
         mean = np.array(results[lang][tool]).mean()
-        sns.distplot(results[lang][tool],label=lang+", mean: "+str(round(mean,3)),ax=a)
+        sns.distplot(results[lang][tool], label=lang+", mean: " +
+                     str(round(mean, 3)), ax=a, color=colors[list(results.keys()).index(lang)])
     a.legend()
     
     t, p = stats.ttest_ind(data[0], data[1], equal_var=False,axis=0)
