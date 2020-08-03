@@ -67,9 +67,21 @@ for lang in data.keys():
     # calc the trendline
     x1 = [i.timestamp() for i in x]
     z = np.polyfit(x1, y, 1)
-    p = np.poly1d(z)
-    trendline_function="y="+str(z[0])+"x +("+str(z[1])+")"
-    plt.plot(x, p(x1), label=lang+" trendline: "+trendline_function,
+    p_func = np.poly1d(z)
+    p = str(z[0]/2)
+    p_e = p.find("e")
+    e = p[p_e:]
+    p_d = p.find(".")
+    d = p[:p_d+3]
+    p1 = d+e
+    p = str(z[1]/2)
+    p_e = p.find("e")
+    e = p[p_e:]
+    p_d = p.find(".")
+    d = p[:p_d+3]
+    p2 = d+e
+    trendline_function="y="+p1+"x +("+p2+")"
+    plt.plot(x, p_func(x1), label=lang+" trendline: "+trendline_function,
              color=colors[list(data.keys()).index(lang)])
 plt.title("Tonalität im Zeitverlauf",fontsize=15)
 plt.ylabel("Tonalität",fontsize=12)
