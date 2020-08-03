@@ -39,22 +39,22 @@ def calc_sent(article):
         result_t += TextBlob(sent).sentiment.polarity
         result_v += analyser.polarity_scores(sent)["compound"]
         
-    sentiments["textblob_ansatz1"] = result_t/len(sentences)
-    sentiments["vader_ansatz1"] = result_v/len(sentences)
+    sentiments["textblob_Ansatz 1"] = result_t/len(sentences)
+    sentiments["vader_Ansatz 1"] = result_v/len(sentences)
     
     
     #calc sent with headline weighted stronger
     
-    sent_t = sentiments["textblob_ansatz1"]
-    sent_v = sentiments["vader_ansatz1"]
+    sent_t = sentiments["textblob_Ansatz 1"]
+    sent_v = sentiments["vader_Ansatz 1"]
     
     headline = article["headline"]
     head_t = TextBlob(headline).sentiment.polarity
     head_v = analyser.polarity_scores(headline)["compound"]
     
     weight = 3
-    sentiments["textblob_ansatz2"] = (sent_t + head_t*weight)/(weight+1)
-    sentiments["vader_ansatz2"] = (sent_v + head_v*weight)/(weight+1)
+    sentiments["textblob_Ansatz 2"] = (sent_t + head_t*weight)/(weight+1)
+    sentiments["vader_Ansatz 2"] = (sent_v + head_v*weight)/(weight+1)
       
     
     #calc sentiment with stronger weigth of first and last forth of article
@@ -87,18 +87,17 @@ def calc_sent(article):
 
         weight = 2
         section_sent= section_result["first"]["t"] * weight + section_result["mid"]["t"] + section_result["first"]["t"] * weight
-        sentiments["textblob_ansatz3"] = section_sent/(weight*2+1)
+        sentiments["textblob_Ansatz 3"] = section_sent/(weight*2+1)
 
         section_sent= section_result["first"]["v"] * weight + section_result["mid"]["v"] + section_result["first"]["v"] * weight
-        sentiments["vader_ansatz3"] = section_sent/(weight*2+1)
+        sentiments["vader_Ansatz 3"] = section_sent/(weight*2+1)
     except Exception as e:
         print(e)
-        sentiments["textblob_ansatz3"] = sentiments["textblob_ansatz1"]
-        sentiments["vader_ansatz3"] = sentiments["vader_ansatz1"]
+        sentiments["textblob_Ansatz 3"] = sentiments["textblob_Ansatz 1"]
+        sentiments["vader_Ansatz 3"] = sentiments["vader_Ansatz 1"]
 
-        
-    sentiments["textblob_ansatz4"] = TextBlob(raw_text).sentiment.polarity
-    sentiments["vader_ansatz4"] = analyser.polarity_scores(raw_text)["compound"]
+    sentiments["textblob_Ansatz 4"] = TextBlob(raw_text).sentiment.polarity
+    sentiments["vader_Ansatz 4"] = analyser.polarity_scores(raw_text)["compound"]
     
     return sentiments
 
@@ -163,7 +162,13 @@ for tool,a in zip(tools_plot,ax.flat):
     p_d = p.find(".")
     d = p[:p_d+3]
     p = d+e
-    a.title.set_text(tool+", p-Wert: "+p)
+    tool_s = tool.split("_")
+    tool_str = tool_s[0]
+
+    if tool_str == "vader":
+        tool_str = "vaderSentiment"
+
+    a.title.set_text(tool_str+" "+tool_s[1]+", p-Wert: "+p)
 fig.tight_layout(pad=3.0)
 fig.suptitle("Sentimentverteilung aller Ansätze",fontsize=15)
 try:
